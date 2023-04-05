@@ -39,6 +39,11 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute("CreateBook", "{controller=Book}/{action=Create}/{id?}");
+});
 app.MapRazorPages();
 
 app.Run();

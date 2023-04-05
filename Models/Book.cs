@@ -8,16 +8,25 @@ namespace WebApplication123.Models
     {
         [Key]
         public int BookId { get; set; }
-        [Required]
-        public string Title { get; set; }
+		[Required]
+		public string Name { get; set; }
+		[Required]
+		public string Quantity { get; set; }
         [Required]
         public decimal Price { get; set; }
-        [Required]
+		[Required]
+		public string Description { get; set; }
+		[Required]
+		public DateTime UpdateDate { get; set; }
+		[Required]
+		public string Author { get; set; }
+		[Required]
+		public string Image { get; set; }
+		[Required]
         public int CategoryId { get; set; }
         [Required]
         public int PublishCompanyId { get; set; }
-        [Required]
-        public string Image { get; set; }
+
 
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
