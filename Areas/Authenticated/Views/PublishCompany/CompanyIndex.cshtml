@@ -1,0 +1,26 @@
+﻿@model List<BookStoreApp.Models.PublishCompany>;
+@{
+}
+
+<h1>Companies</h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Address</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var company in Model)
+		{
+			<tr>
+				<td>@company.PublishingCompanyId</td>
+				<td>@company.Name</td>
+				<td>@company.Adress</td>
+				<td><a href="ViewCompany/@company.PublishingCompanyId" class="btn btn-outline-success">View</a></td>
+			</tr>
+		}
+	</tbody>
+</table>
+<a href="CreatePublishCompany" class="btn btn-outline-primary">Create</a>
