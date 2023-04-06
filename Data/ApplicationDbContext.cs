@@ -19,6 +19,8 @@ namespace WebApplication123.Data
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<PublishCompany> PublicCompanies { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
 
     }
 }

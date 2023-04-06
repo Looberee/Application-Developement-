@@ -2,7 +2,6 @@
 using WebApplication123.Models;
 using WebApplication123.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
 using WebApplication123.ModelsCRUD.Category;
 
 namespace WebApplication123.Controllers
