@@ -431,7 +431,7 @@ namespace WebApplication123.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("_1670_AppDev.Models.Order", b =>

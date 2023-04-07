@@ -25,7 +25,7 @@ namespace WebApplication123.Models
 
         [Required]
         public string BirthDay { get; set; }
-
+        [ForeignKey("UserId")]
         public User User { get; set; }
     }
 }

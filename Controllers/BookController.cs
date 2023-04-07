@@ -44,6 +44,19 @@ namespace WebApplication123.Controllers
 
             };
 
+            foreach (var bookitem in context.Books.ToList())
+            {
+                if (book.Name == bookitem.Name)
+                {
+                    var NewQuantity = bookitem.Quantity.ToString();
+                    var StoredQuantity = book.Quantity.ToString();
+                    int ToStoredQuantity = int.Parse(StoredQuantity) + int.Parse(NewQuantity);
+                    bookitem.Quantity = ToStoredQuantity.ToString(); 
+                    await context.SaveChangesAsync();
+                    return RedirectToAction("BookIndex");
+				}
+            }
+
             await context.Books.AddAsync(book);
             await context.SaveChangesAsync();
             return RedirectToAction("BookIndex");

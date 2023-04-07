@@ -12,7 +12,7 @@ using WebApplication123.Data;
 namespace WebApplication123.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230405154944_BookStoreDB")]
+    [Migration("20230406044547_BookStoreDB")]
     partial class BookStoreDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -433,7 +433,7 @@ namespace WebApplication123.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("_1670_AppDev.Models.Order", b =>
