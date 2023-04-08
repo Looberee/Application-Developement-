@@ -1,11 +1,14 @@
 ﻿using BookStoreApp.Data;
 using BookStoreApp.Models;
 using BookStoreApp.ModelsCRUD.PublishCompany;
+using BookStoreApp.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApp.Areas.Authenticated.Controllers;
-
+[Area(SD.AuthenticatedArea)]
+[Authorize(Roles = SD.StoreOwnerRole)]
 public class PublishCompanyController : Controller
 {
     private readonly ApplicationDbContext context;
@@ -17,7 +20,7 @@ public class PublishCompanyController : Controller
 		[HttpGet]
 		public async Task<IActionResult> CompanyIndex()
 		{
-			var company = await context.PublicCompanies.ToListAsync();
+			var company = await context.PublishCompanies.ToListAsync();
 			return View(company);
 		}
 		[HttpGet]
@@ -36,14 +39,14 @@ public class PublishCompanyController : Controller
 
 			};
 
-			await context.PublicCompanies.AddAsync(company);
+			await context.PublishCompanies.AddAsync(company);
 			await context.SaveChangesAsync();
 			return RedirectToAction("CompanyIndex");
 		}
 		[HttpGet]
 		public async Task<IActionResult> ViewCompany(int id)
 		{
-			var company = await context.PublicCompanies.FirstOrDefaultAsync(x => x.PublishingCompanyId == id);
+			var company = await context.PublishCompanies.FirstOrDefaultAsync(x => x.PublishingCompanyId == id);
 
 			if (company != null)
 			{
@@ -62,7 +65,7 @@ public class PublishCompanyController : Controller
 		[HttpPost]
 		public async Task<IActionResult> ViewCompany(UpdateCompanyView model)
 		{
-			var company = await context.PublicCompanies.FindAsync(model.PublishingCompanyId);
+			var company = await context.PublishCompanies.FindAsync(model.PublishingCompanyId);
 			if (company != null)
 			{
 				company.Name = model.Name;
@@ -78,11 +81,11 @@ public class PublishCompanyController : Controller
 		[HttpPost]
 		public async Task<IActionResult> DeleteCompany(UpdateCompanyView model)
 		{
-			var company = await context.PublicCompanies.FindAsync(model.PublishingCompanyId);
+			var company = await context.PublishCompanies.FindAsync(model.PublishingCompanyId);
 
 			if (company != null)
 			{
-				context.PublicCompanies.Remove(company);
+				context.PublishCompanies.Remove(company);
 
 
 				await context.SaveChangesAsync();

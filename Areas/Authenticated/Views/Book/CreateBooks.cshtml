@@ -1,0 +1,40 @@
+﻿@model BookStoreApp.ModelsCRUD.Book.AddBookViewModel;
+
+@{
+}
+<h1>Create Book Company Example</h1>
+<form method="post" action="CreateCategory">
+    <div class="mb-3">
+        <label for="BookName" class="form-label">Book Name:</label>
+        <input type="text" class="form-control" id="BookName" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="Quantity" class="form-label">Quantity:</label>
+        <input type="text" class="form-control" id="Quantity" asp-for="Quantity">
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Price:</label>
+        <input type="text" class="form-control" id="Price" asp-for="Price">
+    </div>
+    <div class="mb-3">
+        <label for="Description" class="form-label">Description:</label>
+        <input type="text" class="form-control" id="Description" asp-for="Description">
+    </div>
+    <div class="mb-3">
+        <label for="UpdateDate" class="form-label">Update Date:</label>
+        <input type="text" class="form-control" id="UpdateDate" asp-for="UpdateDate">
+    </div>
+    <div class="mb-3">
+            <label for="Author" class="form-label">Author:</label>
+            <input type="text" class="form-control" id="Author" asp-for="Author">
+        </div>
+    <div class="mb-3">
+        <label for="CategoryId" class="form-label">Category ID:</label>
+        <input type="text" class="form-control" id="CategoryId" asp-for="CategoryId">
+    </div>
+    <div class="mb-3">
+            <label for="PublishCompanyId" class="form-label">PublishCompanyId:</label>
+            <input type="text" class="form-control" id="PublishCompanyId" asp-for="PublishCompanyId">
+        </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

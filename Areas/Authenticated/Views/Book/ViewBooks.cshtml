@@ -1,0 +1,37 @@
+﻿@model BookStoreApp.ModelsCRUD.Book.UpdateBookView
+@{
+}
+
+<h1>View Category</h1>
+<form method="post" action="ViewCategory">
+    <div class="mb-3">
+        <label for="BookId" class="form-label">BookId:</label>
+        <input type="text" class="form-control" id="BookId" asp-for="BookId" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="BookName" class="form-label">BookName:</label>
+        <input type="text" class="form-control" id="BookName" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="Quantity" class="form-label">Quantity:</label>
+        <input type="text" class="form-control" id="Quantity" asp-for="Quantity">
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Price:</label>
+        <input type="text" class="form-control" id="Price" asp-for="Price">
+    </div>
+    <div class="mb-3">
+        <label for="UpdateDate" class="form-label">UpdateDate:</label>
+        <input type="text" class="form-control" id="UpdateDate" asp-for="UpdateDate">
+    </div>
+    <div class="mb-3">
+        <label for="CategoryId" class="form-label">CategoryId:</label>
+        <input type="text" class="form-control" id="CategoryId" asp-for="CategoryId">
+    </div>
+    <div class="mb-3">
+                <label for="PublishCompanyId" class="form-label">PublishCompanyId:</label>
+                <input type="text" class="form-control" id="PublishCompanyId" asp-for="PublishCompanyId">
+            </div>
+    <button type="submit" class="btn btn-primary">Edit</button>
+    <button type="submit" class="btn btn-danger" asp-action="DeleteCategory" asp-controller="Category">Delete</button>
+</form>

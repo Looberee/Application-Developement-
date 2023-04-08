@@ -7,11 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApp.Areas.Authenticated.Controllers;
-
+[Area(SD.AuthenticatedArea)]
+[Authorize(Roles = SD.StoreOwnerRole)]
 public class CategoryController : Controller
 {
-    // [Area(SD.AuthenticatedArea)]
-    // [Authorize(Roles = SD.StoreOwnerRole)]
 
     private readonly ApplicationDbContext context;
 

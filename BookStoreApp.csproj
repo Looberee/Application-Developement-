@@ -19,7 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\UnAuthenticated\Views\Home" />
+    <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Areas\UnAuthenticated\Views\Home\Index.cshtml" />
+    <AdditionalFiles Include="Areas\UnAuthenticated\Views\Home\Privacy.cshtml" />
   </ItemGroup>
 
 </Project>

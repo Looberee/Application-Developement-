@@ -1,0 +1,34 @@
+﻿@model List<BookStoreApp.ModelsCRUD.Book.UpdateBookView>;
+@{
+}
+
+<h1>Book</h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th>BookId</th>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var book in Model)
+		{
+			<tr>
+				<td>@book.CategoryId</td>
+				<td>@book.Name</td>
+				<td>@book.Quantity</td>
+				<td>@book.Price</td>
+				<td>@book.Description</td>
+				<td>@book.UpdateDate</td>
+				<td>@book.Author</td>
+				<td>@book.Image</td>
+				<td>@book.CategoryId</td>
+				<td>@book.PublishCompanyId</td>
+				
+				<td><a href="ViewCategory/@book.BookId">View</a></td>
+			</tr>
+		}
+	</tbody>
+</table>
+<a href="CreateCategory" class="btn btn-outline-primary">Create</a>

@@ -1,6 +1,6 @@
 ﻿namespace BookStoreApp.Utils;
 
-public class SD
+public static class SD
 {
     public const string AuthenticatedArea = "Authenticated";
     public const string UnAuthenticatedArea = "UnAuthenticated";
