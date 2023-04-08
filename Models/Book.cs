@@ -32,5 +32,7 @@ namespace WebApplication123.Models
         public Category Category { get; set; }
         [ForeignKey("PublishCompanyId")] 
         public PublishCompany PublishCompany { get; set; }
+
+
     }
 }

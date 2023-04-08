@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using WebApplication123.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WebApplication123.ModelsCRUD.Book
 {
@@ -30,5 +31,6 @@ namespace WebApplication123.ModelsCRUD.Book
         public Models.Category Category { get; set; }
         [ForeignKey("PublishCompanyId")]
         public Models.PublishCompany PublishCompany { get; set; }
+
     }
 }

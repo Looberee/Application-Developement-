@@ -12,7 +12,7 @@ using WebApplication123.Data;
 namespace WebApplication123.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230406044547_BookStoreDB")]
+    [Migration("20230408024937_BookStoreDB")]
     partial class BookStoreDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

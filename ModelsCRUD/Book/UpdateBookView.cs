@@ -31,5 +31,7 @@ namespace WebApplication123.ModelsCRUD.Book
         public Models.Category Category { get; set; }
         [ForeignKey("PublishCompanyId")]
         public Models.PublishCompany PublishCompany { get; set; }
+
+        
     }
 }

@@ -30,15 +30,15 @@
     </div>
     <div class="mb-3">
         <label for="BookImg" class="form-label">Book Image:</label>
-        <input type="text" class="form-control" id="BookImg" asp-for="Image">
+        <input type="string" class="form-control" id="BookImg" asp-for="Image">
     </div>
     <div class="mb-3">
         <label for="BookCategoryId" class="form-label">CategoryId :</label>
-        <input type="text" class="form-control" id="BookCategoryId" asp-for="CategoryId">
+        @Html.DropDownListFor(model => model.CategoryId, (SelectList)ViewBag.Category_id, new { @class = "form-control" })
     </div>
     <div class="mb-3">
         <label for="BookPublishId" class="form-label">PublishId:</label>
-        <input type="text" class="form-control" id="BookPublishId" asp-for="PublishCompanyId">
+        @Html.DropDownListFor(model => model.PublishCompanyId, (SelectList)ViewBag.Company_id, new { @class = "form-control" })
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

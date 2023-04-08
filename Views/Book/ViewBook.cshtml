@@ -3,7 +3,7 @@
 }
 
 <h1>Edit Publish Company Example</h1>
-<form method="post" action="ViewBook">
+<form method="post" action="ViewBook" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="BookId" class="form-label">Book Id:</label>
         <input type="text" class="form-control" id="BookId" asp-for="BookId" readonly>
@@ -38,7 +38,7 @@
     </div>
     <div class="mb-3">
         <label for="BookCatId" class="form-label">CategoryId:</label>
-        <input type="text" class="form-control" id="BookAuthor" asp-for="CategoryId">
+        <input type="text" class="form-control" id="BookAuthor" asp-for="CategoryId" />
     </div>
     <div class="mb-3">
         <label for="BookCompanyId" class="form-label">CompanyId:</label>
