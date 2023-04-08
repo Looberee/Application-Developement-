@@ -18,7 +18,7 @@ public class UpdateBookView
     [Required]
     public string Author { get; set; }
     [Required]
-    public string Image { get; set; }
+    public IFormFile Image { get; set; }
     [Required]
     public int CategoryId { get; set; }
     [Required]

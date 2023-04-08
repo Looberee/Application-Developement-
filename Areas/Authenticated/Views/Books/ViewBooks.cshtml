@@ -2,8 +2,8 @@
 @{
 }
 
-<h1>View Category</h1>
-<form method="post" action="ViewCategory">
+<h1>View Book</h1>
+<form method="post" action="ViewBooks">
     <div class="mb-3">
         <label for="BookId" class="form-label">BookId:</label>
         <input type="text" class="form-control" id="BookId" asp-for="BookId" readonly>
@@ -21,8 +21,21 @@
         <input type="text" class="form-control" id="Price" asp-for="Price">
     </div>
     <div class="mb-3">
+            <label for="Description" class="form-label">Description:</label>
+            <input type="text" class="form-control" id="Description" asp-for="Description">
+        </div>
+    <div class="mb-3">
         <label for="UpdateDate" class="form-label">UpdateDate:</label>
         <input type="text" class="form-control" id="UpdateDate" asp-for="UpdateDate">
+    </div>
+    <div class="mb-3">
+        <label for="Author" class="form-label">Author:</label>
+        <input type="text" class="form-control" id="Author" asp-for="Author">
+    </div>
+    <div class="mb-3">
+            <label for="Image" class="form-label">Image:</label>
+        <input type="text" class="form-control" id="Image" asp-for="Image">
+        
     </div>
     <div class="mb-3">
         <label for="CategoryId" class="form-label">CategoryId:</label>
@@ -30,8 +43,8 @@
     </div>
     <div class="mb-3">
                 <label for="PublishCompanyId" class="form-label">PublishCompanyId:</label>
-                <input type="text" class="form-control" id="PublishCompanyId" asp-for="PublishCompanyId">
-            </div>
+        <input type="text" class="form-control" id="PublishCompanyId" asp-for="PublishCompanyId">
+        </div>
     <button type="submit" class="btn btn-primary">Edit</button>
-    <button type="submit" class="btn btn-danger" asp-action="DeleteCategory" asp-controller="Category">Delete</button>
+    <button type="submit" class="btn btn-danger" asp-action="DeleteBook" asp-controller="Books">Delete</button>
 </form>

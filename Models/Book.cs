@@ -19,8 +19,8 @@ namespace BookStoreApp.Models
 		public DateTime UpdateDate { get; set; }
 		[Required]
 		public string Author { get; set; }
-		[Required]
-		public string Image { get; set; }
+		[NotMapped]
+		[Required] public IFormFile Image { get; set; }
 		[Required]
         public int CategoryId { get; set; }
         [Required]

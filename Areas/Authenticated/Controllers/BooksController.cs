@@ -1,200 +1,155 @@
 ﻿using BookStoreApp.Data;
 using BookStoreApp.Models;
+using BookStoreApp.ModelsCRUD;
+using BookStoreApp.ModelsCRUD.Book;
+using BookStoreApp.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApp.Areas.Authenticated.Controllers;
 
+[Area(SD.AuthenticatedArea)]
+[Authorize(Roles = SD.StoreOwnerRole)]
 public class BooksController : Controller
 {
     private readonly ApplicationDbContext _db;
-        private readonly IWebHostEnvironment _environment;
 
+    // IWebHostEnvironment will help you take the image path
+    public BooksController(ApplicationDbContext db)
+    {
+        _db = db;
+    }
 
-        // IWebHostEnvironment will help you take the image path
-        public BooksController(ApplicationDbContext db, IWebHostEnvironment environment)
+    // GET
+    // --------------------INDEX-------------------
+    [HttpGet]
+    public async Task<IActionResult> BooksIndex()
+    {
+        var book = await _db.Books.ToListAsync();
+        return View(book);
+    }
+
+    [HttpGet]
+    public IActionResult CreateBooks()
+    {
+        return View();
+    }
+
+    public async Task<IActionResult> CreateBooks(AddBookViewModel BookModel)
+    {
+        var book = new Book()
         {
-            _db = db;
-            _environment = environment;
+            Name = BookModel.Name,
+            Quantity = BookModel.Quantity,
+            Price = BookModel.Price,
+            Description = BookModel.Description,
+            Author = BookModel.Author,
+            Image = BookModel.Image,
+            UpdateDate = BookModel.UpdateDate,
+            CategoryId = BookModel.CategoryId,
+            PublishCompanyId = BookModel.PublishCompanyId
+        };
+        foreach (var bookitem in _db.Books.ToList())
+        {
+            if (book.Name == bookitem.Name)
+            {
+                var NewQuantity = bookitem.Quantity.ToString();
+                var StoredQuantity = book.Quantity.ToString();
+                int ToStoredQuantity = int.Parse(StoredQuantity) + int.Parse(NewQuantity);
+                bookitem.Quantity = ToStoredQuantity.ToString();
+                await _db.SaveChangesAsync();
+                return RedirectToAction("BooksIndex");
+            }
         }
 
-        // GET
-        // --------------------INDEX-------------------
-        [HttpGet]
-        public async Task<IActionResult> BooksIndex()
+
+        await _db.Books.AddAsync(book);
+        await _db.SaveChangesAsync();
+        return RedirectToAction("BooksIndex");
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> ViewBooks(int id)
+    {
+        var books = await _db.Books.FirstOrDefaultAsync(x => x.BookId == id);
+
+        if (books != null)
         {
-            var book = await _db.Books.ToListAsync();
-            return View(book);
+            var viewmodel = new UpdateBookView()
+            {
+                BookId = books.BookId,
+                Name = books.Name,
+                Quantity = books.Quantity,
+                Price = books.Price,
+                Description = books.Description,
+                Author = books.Author,
+                Image = books.Image,
+                UpdateDate = books.UpdateDate,
+                CategoryId = books.CategoryId,
+                PublishCompanyId = books.PublishCompanyId
+
+            };
+
+            return await Task.Run(() => View("ViewBooks", viewmodel));
         }
+
+        return RedirectToAction("BooksIndex");
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> ViewBooks(UpdateBookView model)
+    {
+        var book = await _db.Books.FindAsync(model.BookId);
+        if (book != null)
+        {
+            book.Name = model.Name;
+            book.Description = model.Description;
+
+            await _db.SaveChangesAsync();
+
+            return RedirectToAction("BooksIndex");
+        }
+
+        return RedirectToAction("BooksIndex");
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteBook(UpdateBookView model)
+    {
+        var book = await _db.Books.FindAsync(model.BookId);
+
+        if (book != null)
+        {
+            _db.Books.Remove(book);
+
+
+            await _db.SaveChangesAsync();
+
+            return RedirectToAction("BooksIndex");
+        }
+
+        return RedirectToAction("BooksIndex");
+    }
+
+    [HttpPost("upload-image")]
+    public async Task<IActionResult> UploadImage(IFormFile image)
+    {
+        // Code to handle uploaded image goes here
+        if (image != null && image.Length > 0)
+        {
+            var fileName = image.FileName;
+            var contentType = image.ContentType;
+            var content = new byte[image.Length];
+            await image.OpenReadStream().ReadAsync(content, 0, (int)image.Length);
         
- 
-
-        // // -------------------DELETE--------------------
-        // [HttpGet]
-        // public IActionResult Delete(int id)
-        // {
-        //     var objBook = _db.Books.Find(id);
-        //     _db.Books.Remove(objBook);
-        //     _db.SaveChanges();
-        //
-        //
-        //     return RedirectToAction(nameof(Index));
-        // }
-
-
-        // // -------------------UPSERT----------------------
-        // [HttpGet]
-        // public IActionResult Upsert(int? id)
-        // {
-        //     var bookVm = new BookVm();
-        //
-        //     bookVm.Categories = CategorySelectListItems();
-        //
-        //
-        //     if (id == null)
-        //     {
-        //         bookVm.Book = new Book();
-        //         return View(bookVm);
-        //     }
-        //
-        //     var book = _db.Books.Find(id);
-        //     bookVm.Book = book;
-        //
-        //     return View(bookVm);
-        // }
-        //
-        //
-        // [HttpPost]
-        // public IActionResult Upsert(BookVm bookVm)
-        // {
-        //     if (!ModelState.IsValid)
-        //     {
-        //         // if (bookVm.Book.Id == 0)
-        //         //     _db.Books.Add(bookVm.Book);
-        //         // else
-        //         //     _db.Books.Update(bookVm.Book);
-        //         //
-        //         // _db.SaveChanges();
-        //         //
-        //         // return RedirectToAction(nameof(Index));
-        //
-        //         bookVm.Categories = CategorySelectListItems();
-        //         return View(bookVm);
-        //     }
-        //
-        //     var webRootPath = _environment.WebRootPath;
-        //     var files = HttpContext.Request.Form.Files;
-        //     if (files.Count > 0)
-        //     {
-        //         var fileName = Guid.NewGuid();
-        //         var uploads = Path.Combine(webRootPath, @"images/products");
-        //         var extension = Path.GetExtension(files[0].FileName);
-        //         if (bookVm.Book.Id != 0)
-        //         {
-        //             var productDb = _db.Books.AsNoTracking()
-        //                 .Where(b => b.Id == bookVm.Book.Id).First();
-        //             if (productDb.ImgPath != null && bookVm.Book.Id != 0)
-        //             {
-        //                 var imagePath = Path.Combine(webRootPath, productDb.ImgPath.TrimStart('/'));
-        //                 if (System.IO.File.Exists(imagePath)) System.IO.File.Delete(imagePath);
-        //             }
-        //         }
-        //
-        //         using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
-        //         {
-        //             files[0].CopyTo(filesStreams);
-        //         }
-        //
-        //         bookVm.Book.ImgPath = @"/images/products/" + fileName + extension;
-        //     }
-        //
-        //     else
-        //     {
-        //         bookVm.Categories = CategorySelectListItems();
-        //         return View(bookVm);
-        //     }
-        //
-        //
-        //     if (bookVm.Book.Id == 0 || bookVm.Book.Id == null)
-        //         _db.Books.Add(bookVm.Book);
-        //     else
-        //         _db.Books.Update(bookVm.Book);
-        //
-        //     _db.SaveChanges();
-        //
-        //     // provide data for the categories list
-        //     // bookVm.;Categories = CategorySelectListItems();
-        //
-        //     return RedirectToAction(nameof(Index));
-        // }
-        //
-        // // method for category select list VM
-        // private IEnumerable<SelectListItem> CategorySelectListItems()
-        // {
-        //     var categories = _db.Categories.ToList();
-        //
-        //     // for each book
-        //     var result = categories
-        //         .Select(c => new SelectListItem
-        //     {
-        //         Text = c.Name,
-        //         Value = c.Id.ToString()
-        //     });
-        //
-        //     return result;
-        // }
-        //
-        // // Upload Book
-        // public IActionResult UploadExcel(IFormFile file)
-        // {
-        //     if (file == null)
-        //     {
-        //         return RedirectToAction(nameof(Index));
-        //     }
-        //
-        //     var path = Path.Combine(_environment.WebRootPath, "uploads");
-        //     if (!Directory.Exists(path))
-        //     {
-        //         Directory.CreateDirectory(path);
-        //     }
-        //
-        //     string fileName = Path.GetFileName(file.FileName);
-        //     string filePath = Path.Combine(path, fileName);
-        //
-        //     using (FileStream stream = new FileStream(filePath, FileMode.Create))
-        //     {
-        //         file.CopyTo(stream);
-        //     }
-        //
-        //     using var streamFile = System.IO.File.Open(filePath, FileMode.Open, FileAccess.Read);
-        //     using var reader = ExcelReaderFactory.CreateReader(streamFile);
-        //     
-        //     
-        //     while (reader.Read())
-        //     {
-        //         var category = _db.Categories.FirstOrDefault(c => c.Name == reader.GetValue(3).ToString());
-        //         if (category == null)
-        //         { 
-        //             continue;
-        //         }
-        //         
-        //         var book = new Book()
-        //         {
-        //             Name = reader.GetValue(0).ToString(),
-        //             Description = reader.GetValue(1).ToString(),
-        //             Price = Convert.ToDouble(reader.GetValue(2).ToString()),
-        //             CategoryId = category.Id,
-        //             Author = reader.GetValue(4).ToString(),
-        //             NoPage = Convert.ToInt32(reader.GetValue(5).ToString()),
-        //             ImgPath = reader.GetValue(6).ToString(),
-        //         };
-        //
-        //         _db.Books.Add(book);
-        //     }
-        //
-        //     _db.SaveChanges();
-        //     return RedirectToAction(nameof(Index));
-        //
-        // }
+            // Code to handle uploaded image goes here
+        }
+    
+        // Handle case where no image was uploaded
+        return RedirectToAction("BooksIndex");
+    }
+    
 }
+

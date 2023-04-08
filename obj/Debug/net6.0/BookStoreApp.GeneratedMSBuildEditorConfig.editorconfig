@@ -27,6 +27,22 @@ build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVW5BdXRoZW50aWNhdGVkXFZpZXdz
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/1670/BookStoreApp/BookStoreApp/Areas/Authenticated/Pages/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxQYWdlc1xCb29rc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1670/BookStoreApp/BookStoreApp/Areas/Authenticated/Views/Books/BooksIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xCb29rc1xCb29rc0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1670/BookStoreApp/BookStoreApp/Areas/Authenticated/Views/Books/CreateBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xCb29rc1xDcmVhdGVCb29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1670/BookStoreApp/BookStoreApp/Areas/Authenticated/Views/Books/ViewBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xCb29rc1xWaWV3Qm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/1670/BookStoreApp/BookStoreApp/Areas/Authenticated/Views/Category/CategoryIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xDYXRlZ29yeVxDYXRlZ29yeUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

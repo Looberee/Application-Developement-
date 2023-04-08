@@ -1,4 +1,4 @@
-﻿@model List<BookStoreApp.ModelsCRUD.Book.UpdateBookView>;
+﻿@model List<Book>;
 @{
 }
 
@@ -8,7 +8,15 @@
 		<tr>
 			<th>BookId</th>
 			<th>Name</th>
+			<th>Quantity</th>
+			<th>Price</th>
 			<th>Description</th>
+			<th>Author</th>
+			<th>Image</th>
+			<th>UpdateDate</th>
+			<th>CategoryID</th>
+			<th>PublishCompanyID</th>
+			
 		</tr>
 	</thead>
 	<tbody>
@@ -26,9 +34,9 @@
 				<td>@book.CategoryId</td>
 				<td>@book.PublishCompanyId</td>
 				
-				<td><a href="ViewCategory/@book.BookId">View</a></td>
+				<td><a href="ViewBooks/@book.BookId">View</a></td>
 			</tr>
 		}
 	</tbody>
 </table>
-<a href="CreateCategory" class="btn btn-outline-primary">Create</a>
+<a href="CreateBooks" class="btn btn-outline-primary">Create</a>
