@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStoreApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230408025054_createDB")]
+    [Migration("20230408175328_createDB")]
     partial class createDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,8 +51,8 @@ namespace BookStoreApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<int>("PublishCompanyId")
                         .HasColumnType("int");
@@ -71,6 +71,31 @@ namespace BookStoreApp.Migrations
                     b.HasIndex("PublishCompanyId");
 
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("BookStoreApp.Models.Cart", b =>
+                {
+                    b.Property<int>("CartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"), 1L, 1);
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CustomerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CartId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("Carts");
                 });
 
             modelBuilder.Entity("BookStoreApp.Models.Category", b =>
@@ -94,48 +119,6 @@ namespace BookStoreApp.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("BookStoreApp.Models.Customer", b =>
-                {
-                    b.Property<int>("CustomerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"), 1L, 1);
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ApplicationUserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("BirthDay")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Gender")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CustomerId");
-
-                    b.HasIndex("ApplicationUserId");
-
-                    b.ToTable("Customers");
-                });
-
             modelBuilder.Entity("BookStoreApp.Models.Order", b =>
                 {
                     b.Property<int>("OrderId")
@@ -144,22 +127,25 @@ namespace BookStoreApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"), 1L, 1);
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("DeliveryDate")
+                    b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OrderDate")
+                    b.Property<string>("CustomerId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Total")
+                        .HasColumnType("float");
 
                     b.HasKey("OrderId");
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Order");
                 });
 
             modelBuilder.Entity("BookStoreApp.Models.OrderDetail", b =>
@@ -175,6 +161,9 @@ namespace BookStoreApp.Migrations
 
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
@@ -468,24 +457,26 @@ namespace BookStoreApp.Migrations
                     b.Navigation("PublishCompany");
                 });
 
-            modelBuilder.Entity("BookStoreApp.Models.Customer", b =>
+            modelBuilder.Entity("BookStoreApp.Models.Cart", b =>
                 {
-                    b.HasOne("BookStoreApp.Models.ApplicationUser", "ApplicationUser")
+                    b.HasOne("BookStoreApp.Models.Book", "Book")
                         .WithMany()
-                        .HasForeignKey("ApplicationUserId");
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("ApplicationUser");
+                    b.Navigation("Book");
                 });
 
             modelBuilder.Entity("BookStoreApp.Models.Order", b =>
                 {
-                    b.HasOne("BookStoreApp.Models.Customer", "Customer")
+                    b.HasOne("BookStoreApp.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("BookStoreApp.Models.OrderDetail", b =>

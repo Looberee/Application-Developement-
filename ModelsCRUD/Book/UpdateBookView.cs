@@ -10,7 +10,7 @@ public class UpdateBookView
     [Required]
     public string Quantity { get; set; }
     [Required]
-    public decimal Price { get; set; }
+    public double Price { get; set; }
     [Required]
     public string Description { get; set; }
     [Required]
@@ -18,7 +18,7 @@ public class UpdateBookView
     [Required]
     public string Author { get; set; }
     [Required]
-    public IFormFile Image { get; set; }
+    public string Image { get; set; }
     [Required]
     public int CategoryId { get; set; }
     [Required]

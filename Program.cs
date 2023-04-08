@@ -45,6 +45,9 @@ using (var scope = app.Services.CreateScope())
     var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
     dbInitializer.Initializer();
 }
+// builder.Services.AddControllersWithViews();
+//
+// builder.Services.AddScoped<BookStoreApp.Models.Order>();
 
 app.MapControllerRoute(
     name: "default",

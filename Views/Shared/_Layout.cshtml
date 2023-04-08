@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using BookStoreApp.Utils
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@inject IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -18,6 +21,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                                        <ul class="navbar-nav flex-grow-1">
+                                            @if (User.IsInRole("Customer"))
+                                            {
+                                                var count = HttpContextAccessor.HttpContext.Session.GetInt32(SD.ssShoppingCart) ?? 0;
+                                                <li style="color: white">
+                                                    <a asp-area="Authenticated" asp-controller="Cart" asp-action="CartIndex" class="nav-link">
+                                                        <i class="fa-brands fa-opencart"></i> &nbsp; (@count)
+                                                    </a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -33,6 +49,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Authenticated" asp-controller="Books" asp-action="BooksIndex">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Authenticated" asp-controller="Cart" asp-action="CartIndex">Cart</a>
                             </li>
                     </ul>
                     <partial name="_LoginPartial" />
