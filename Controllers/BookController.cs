@@ -4,6 +4,9 @@ using WebApplication123.Data;
 using Microsoft.EntityFrameworkCore;
 using WebApplication123.ModelsCRUD.Book;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+
 
 namespace WebApplication123.Controllers
 {
@@ -31,11 +34,11 @@ namespace WebApplication123.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> CreateBook(AddBookViewModel BookModel, IFormFile uploadedImage)
+        public async Task<IActionResult> CreateBook(AddBookViewModel BookModel)
         {
             ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name", BookModel.CategoryId);
             ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name", BookModel.PublishCompanyId);
-
+            string uniqueFileName = UploadedFile(BookModel);
             var book = new Book()
             {
                 Name = BookModel.Name,
@@ -44,12 +47,14 @@ namespace WebApplication123.Controllers
                 Description = BookModel.Description,
                 UpdateDate = BookModel.UpdateDate,
                 Author = BookModel.Author,
-                Image = BookModel.Image,
+                Image = uniqueFileName,
                 CategoryId = BookModel.CategoryId,
                 PublishCompanyId = BookModel.PublishCompanyId,
                 Category = BookModel.Category,
                 PublishCompany = BookModel.PublishCompany
             };
+            
+
             
 
             foreach (var bookitem in context.Books.ToList())
@@ -65,6 +70,8 @@ namespace WebApplication123.Controllers
                 }
             }
 
+            context.Books.Attach(book);
+            context.Entry(book).State = EntityState.Added;
             await context.Books.AddAsync(book);
             await context.SaveChangesAsync();
             return RedirectToAction("BookIndex");
@@ -145,6 +152,39 @@ namespace WebApplication123.Controllers
             return RedirectToAction("BookIndex");
         }
        
+        private string UploadedFile(AddBookViewModel model)
+        {
+            string uniqueFileName = null;
+            
+            if (model.FronImage != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "Images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.FronImage.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.FronImage.CopyTo(fileStream);
+                }
 
+            }
+            return uniqueFileName;
+        }
+        private string UploadedFile(UpdateBookView model)
+        {
+            string uniqueFileName = null;
+
+            if (model.FronImage != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "Images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.FronImage.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.FronImage.CopyTo(fileStream);
+                }
+
+            }
+            return uniqueFileName;
+        }
     }
 }

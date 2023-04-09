@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\WebApplication123.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\f65c5da8-cb10-4485-945b-9e82311aeb62_sample3.png",
+      "PackagePath": "staticwebassets\\Images\\f65c5da8-cb10-4485-945b-9e82311aeb62_sample3.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\sample3.png",
+      "PackagePath": "staticwebassets\\Images\\sample3.png"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

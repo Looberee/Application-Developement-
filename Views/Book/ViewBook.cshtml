@@ -34,7 +34,8 @@
     </div>
     <div class="mb-3">
         <label for="BookImg" class="form-label">Book Image:</label>
-        <input type="text" class="form-control" id="BookImg" asp-for="Image">
+        <input type="text" class="form-control" id ="BookImg" asp-for="Image" />
+        <img id="FrontImagePrv" src="~/Images/@Model.Image" width="150" height="150" style="border:1px; margin-top:20px; margin-left:120px" />
     </div>
     <div class="mb-3">
         <label for="BookCategoryId" class="form-label">CategoryId :</label>

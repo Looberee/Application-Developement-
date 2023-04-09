@@ -32,6 +32,9 @@ namespace WebApplication123.ModelsCRUD.Book
         [ForeignKey("PublishCompanyId")]
         public Models.PublishCompany PublishCompany { get; set; }
 
-        
+        [Required(ErrorMessage = "Please choose Front image")]
+        [Display(Name = "Front Image")]
+        [NotMapped]
+        public IFormFile FronImage { get; set; }
     }
 }

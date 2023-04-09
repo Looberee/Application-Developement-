@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dJiStjzCkfxCeEi9mJnZWZ/X4/RnVhmY5D5QhMbxGko=",
+  "Hash": "1Ey+8HgJpvTTXDwiMFYswdtob1xY8DdFV1okJWu+8IY=",
   "Source": "WebApplication123",
   "BasePath": "_content/WebApplication123",
   "Mode": "Default",
@@ -1103,6 +1103,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\f65c5da8-cb10-4485-945b-9e82311aeb62_sample3.png",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/f65c5da8-cb10-4485-945b-9e82311aeb62_sample3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\f65c5da8-cb10-4485-945b-9e82311aeb62_sample3.png"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\sample3.png",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/sample3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\sample3.png"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\js\\site.js",

@@ -3,7 +3,7 @@
 @{
 }
 <h1>Create Book and Send Request (Processing)</h1>
-<form method="post" action="CreateBook">
+<form method="post" action="CreateBook" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="BookName" class="form-label">Book Name:</label>
         <input type="text" class="form-control" id="BookName" asp-for="Name">
@@ -30,7 +30,8 @@
     </div>
     <div class="mb-3">
         <label for="BookImg" class="form-label">Book Image:</label>
-        <input type="string" class="form-control" id="BookImg" asp-for="Image">
+        <input type="file" asp-for="FronImage" class="form-control" id="FlFrontImage" onchange="document.getElementById('FrontImagePrv').src = window.URL.createObjectURL(this.files[0])">
+        <img id="FrontImagePrv" src="" alt="Logo Image" width="150" height="150" style="border:1px; margin-top:20px; margin-left:120px"/>
     </div>
     <div class="mb-3">
         <label for="BookCategoryId" class="form-label">CategoryId :</label>
