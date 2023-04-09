@@ -61,12 +61,13 @@ namespace WebApplication123.Controllers
             {
                 if (book.Name == bookitem.Name)
                 {
-                        var NewQuantity = bookitem.Quantity.ToString();
-                        var StoredQuantity = book.Quantity.ToString();
-                        int ToStoredQuantity = int.Parse(StoredQuantity) + int.Parse(NewQuantity);
-                        bookitem.Quantity = ToStoredQuantity.ToString();
-                        await context.SaveChangesAsync();
-                        return RedirectToAction("BookIndex");
+                    var NewQuantity = bookitem.Quantity.ToString();
+                    var StoredQuantity = book.Quantity.ToString();
+                    int ToStoredQuantity = int.Parse(StoredQuantity) + int.Parse(NewQuantity);
+                    bookitem.Quantity = ToStoredQuantity.ToString();
+                    bookitem.UpdateDate = book.UpdateDate; 
+                    await context.SaveChangesAsync();
+                    return RedirectToAction("BookIndex");
                 }
             }
 
@@ -86,7 +87,6 @@ namespace WebApplication123.Controllers
             ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name");
             ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name");
             var book = await context.Books.FirstOrDefaultAsync(x => x.BookId == id);
-
             if (book != null)
             {
                 var viewmodel = new UpdateBookView()
@@ -115,6 +115,7 @@ namespace WebApplication123.Controllers
             ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name", model.CategoryId);
             ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name", model.PublishCompanyId);
             var book = await context.Books.FindAsync(model.BookId);
+            string uniqueFileName = UploadedFile(model);
             if (book != null)
             {
                 book.Name = model.Name;
@@ -123,7 +124,7 @@ namespace WebApplication123.Controllers
                 book.Description = model.Description;
                 book.UpdateDate = model.UpdateDate;
                 book.Author = model.Author;
-                book.Image = model.Image;
+                book.Image = uniqueFileName;
                 book.CategoryId = model.CategoryId;
                 book.PublishCompanyId = model.PublishCompanyId;
 
