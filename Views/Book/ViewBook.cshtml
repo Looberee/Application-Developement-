@@ -2,7 +2,7 @@
 @{
 }
 
-<h1>Edit Publish Company Example</h1>
+<h1>Edit Book</h1>
 <form method="post" action="ViewBook" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="BookId" class="form-label">Book Id:</label>
@@ -37,12 +37,12 @@
         <input type="text" class="form-control" id="BookImg" asp-for="Image">
     </div>
     <div class="mb-3">
-        <label for="BookCatId" class="form-label">CategoryId:</label>
-        <input type="text" class="form-control" id="BookAuthor" asp-for="CategoryId" />
+        <label for="BookCategoryId" class="form-label">CategoryId :</label>
+        @Html.DropDownListFor(model => model.CategoryId, (SelectList)ViewBag.Category_id, new { @class = "form-control" })
     </div>
     <div class="mb-3">
-        <label for="BookCompanyId" class="form-label">CompanyId:</label>
-        <input type="text" class="form-control" id="BookCompanyId" asp-for="PublishCompanyId">
+        <label for="BookPublishId" class="form-label">PublishId:</label>
+        @Html.DropDownListFor(model => model.PublishCompanyId, (SelectList)ViewBag.Company_id, new { @class = "form-control" })
     </div>
     <button type="submit" class="btn btn-primary">Edit</button>
     <button type="submit" class="btn btn-danger" asp-action="DeleteBook" asp-controller="Book">Delete</button>

@@ -76,6 +76,8 @@ namespace WebApplication123.Controllers
         [HttpGet]
         public async Task<IActionResult> ViewBook(int id)
         {
+            ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name");
+            ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name");
             var book = await context.Books.FirstOrDefaultAsync(x => x.BookId == id);
 
             if (book != null)
@@ -103,6 +105,8 @@ namespace WebApplication123.Controllers
         [HttpPost]
         public async Task<IActionResult> ViewBook(UpdateBookView model)
         {
+            ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name", model.CategoryId);
+            ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name", model.PublishCompanyId);
             var book = await context.Books.FindAsync(model.BookId);
             if (book != null)
             {
