@@ -3,7 +3,7 @@
 }
 
 <h1>View Book</h1>
-<form method="post" action="ViewBooks">
+<form method="post" action="ViewBooks" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="BookId" class="form-label">BookId:</label>
         <input type="text" class="form-control" id="BookId" asp-for="BookId" readonly>
@@ -26,15 +26,16 @@
         </div>
     <div class="mb-3">
         <label for="UpdateDate" class="form-label">UpdateDate:</label>
-        <input type="text" class="form-control" id="UpdateDate" asp-for="UpdateDate">
+        <input type="date" class="form-control" id="UpdateDate" asp-for="UpdateDate">
     </div>
     <div class="mb-3">
         <label for="Author" class="form-label">Author:</label>
         <input type="text" class="form-control" id="Author" asp-for="Author">
     </div>
     <div class="mb-3">
-            <label for="Image" class="form-label">Image:</label>
-        <input type="text" class="form-control" id="Image" asp-for="Image">
+            <label for="BookImg" class="form-label">Book Image:</label>
+                    <input type="file" asp-for="FronImage" class="form-control" id="FlFrontImage" onchange="document.getElementById('FrontImagePrv').src = window.URL.createObjectURL(this.files[0])">
+                    <img id="FrontImagePrv" src="" alt="Logo Image" width="150" height="150" style="border:1px; margin-top:20px; margin-left:120px"/>
         
     </div>
     <div class="mb-3">

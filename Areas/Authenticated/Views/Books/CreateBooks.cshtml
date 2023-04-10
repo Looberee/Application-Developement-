@@ -3,7 +3,7 @@
 @{
 }
 <h1>Create Book Company Example</h1>
-<form method="post" action="CreateBooks">
+<form method="post" action="CreateBooks" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="BookName" class="form-label">Book Name:</label>
         <input type="text" class="form-control" id="BookName" asp-for="Name">
@@ -22,23 +22,24 @@
     </div>
     <div class="mb-3">
         <label for="UpdateDate" class="form-label">Update Date:</label>
-        <input type="text" class="form-control" id="UpdateDate" asp-for="UpdateDate">
+        <input type="date" class="form-control" id="UpdateDate" asp-for="UpdateDate">
     </div>
     <div class="mb-3">
         <label for="Author" class="form-label">Author:</label>
         <input type="text" class="form-control" id="Author" asp-for="Author">
     </div>
     <div class="mb-3">
-        <label for="Image" class="form-label">Image:</label>
-        <input type="file" class="form-control" id="Image" asp-for="Image">
-            </div>
+        <label for="BookImg" class="form-label">Image:</label>
+                <input type="file" asp-for="FronImage" class="form-control" id="FlFrontImage" onchange="document.getElementById('FrontImagePrv').src = window.URL.createObjectURL(this.files[0])">
+    <img id="FrontImagePrv" src="" alt="Logo Image" width="150" height="150" style="border:1px; margin-top:20px; margin-left:120px"/>
+    </div>
     <div class="mb-3">
         <label for="CategoryId" class="form-label">Category ID:</label>
-        <input type="text" class="form-control" id="CategoryId" asp-for="CategoryId">
+        @Html.DropDownListFor(model => model.CategoryId, (SelectList)ViewBag.CategoryId, new { @class = "form-control" })
     </div>
     <div class="mb-3">
             <label for="PublishCompanyId" class="form-label">PublishCompanyId:</label>
-            <input type="text" class="form-control" id="PublishCompanyId" asp-for="PublishCompanyId">
+            @Html.DropDownListFor(model => model.PublishCompanyId, (SelectList)ViewBag.PublishCompanyId, new { @class = "form-control" })
         </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

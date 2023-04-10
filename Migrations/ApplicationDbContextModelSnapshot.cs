@@ -180,11 +180,11 @@ namespace BookStoreApp.Migrations
 
             modelBuilder.Entity("BookStoreApp.Models.PublishCompany", b =>
                 {
-                    b.Property<int>("PublishingCompanyId")
+                    b.Property<int>("PublishCompanyId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PublishingCompanyId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PublishCompanyId"), 1L, 1);
 
                     b.Property<string>("Adress")
                         .IsRequired()
@@ -194,7 +194,7 @@ namespace BookStoreApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PublishingCompanyId");
+                    b.HasKey("PublishCompanyId");
 
                     b.ToTable("PublishCompanies");
                 });
@@ -447,7 +447,7 @@ namespace BookStoreApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStoreApp.Models.PublishCompany", "PublishCompany")
+                    b.HasOne("BookStoreApp.Models.PublishCompany", "PublishingCompany")
                         .WithMany()
                         .HasForeignKey("PublishCompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -455,7 +455,7 @@ namespace BookStoreApp.Migrations
 
                     b.Navigation("Category");
 
-                    b.Navigation("PublishCompany");
+                    b.Navigation("PublishingCompany");
                 });
 
             modelBuilder.Entity("BookStoreApp.Models.Cart", b =>

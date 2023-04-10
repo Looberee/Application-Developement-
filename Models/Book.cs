@@ -21,6 +21,10 @@ namespace BookStoreApp.Models
 		public string Author { get; set; }
 		
 		[Required] public string Image { get; set; }
+		[Required(ErrorMessage = "Please choose Front image")]      
+		[Display(Name = "Front Image")]
+		[NotMapped]
+		public IFormFile FronImage { get; set; }
 		[Required]
         public int CategoryId { get; set; }
         [Required]
@@ -30,6 +34,6 @@ namespace BookStoreApp.Models
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
         [ForeignKey("PublishCompanyId")] 
-        public PublishCompany PublishCompany { get; set; }
+        public PublishCompany PublishingCompany { get; set; }
     }
 }

@@ -15,10 +15,10 @@
 		@foreach (var company in Model)
 		{
 			<tr>
-				<td>@company.PublishingCompanyId</td>
+				<td>@company.PublishCompanyId</td>
 				<td>@company.Name</td>
 				<td>@company.Adress</td>
-				<td><a href="ViewCompany/@company.PublishingCompanyId" class="btn btn-outline-success">View</a></td>
+				<td><a href="ViewCompany/@company.PublishCompanyId" class="btn btn-outline-success">View</a></td>
 			</tr>
 		}
 	</tbody>

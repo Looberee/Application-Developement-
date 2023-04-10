@@ -1,26 +1,31 @@
-﻿using Microsoft.Build.Framework;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookStoreApp.ModelsCRUD.Book;
 
 public class UpdateBookView
 {
     public int BookId { get; set; }
-    [Required]
+    [Microsoft.Build.Framework.Required]
     public string Name { get; set; }
-    [Required]
+    [Microsoft.Build.Framework.Required]
     public string Quantity { get; set; }
-    [Required]
+    [Microsoft.Build.Framework.Required]
     public double Price { get; set; }
-    [Required]
+    [Microsoft.Build.Framework.Required]
     public string Description { get; set; }
-    [Required]
+    [Microsoft.Build.Framework.Required]
     public DateTime UpdateDate { get; set; }
-    [Required]
+    [Microsoft.Build.Framework.Required]
     public string Author { get; set; }
-    [Required]
+    [Microsoft.Build.Framework.Required]
     public string Image { get; set; }
-    [Required]
+    [Required(ErrorMessage = "Please choose Front image")]      
+    [Display(Name = "Front Image")]
+    [NotMapped]
+    public IFormFile FronImage { get; set; }
+    [Microsoft.Build.Framework.Required]
     public int CategoryId { get; set; }
-    [Required]
+    [Microsoft.Build.Framework.Required]
     public int PublishCompanyId { get; set; }
 }

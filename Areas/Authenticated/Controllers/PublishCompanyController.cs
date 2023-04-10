@@ -46,13 +46,13 @@ public class PublishCompanyController : Controller
 		[HttpGet]
 		public async Task<IActionResult> ViewCompany(int id)
 		{
-			var company = await context.PublishCompanies.FirstOrDefaultAsync(x => x.PublishingCompanyId == id);
+			var company = await context.PublishCompanies.FirstOrDefaultAsync(x => x.PublishCompanyId == id);
 
 			if (company != null)
 			{
 				var viewmodel = new UpdateCompanyView()
 				{
-					PublishingCompanyId = company.PublishingCompanyId,
+					PublishingCompanyId = company.PublishCompanyId,
 					Name = company.Name,
 					Adress = company.Adress,
 				};

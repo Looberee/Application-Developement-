@@ -17,11 +17,13 @@ namespace BookStoreApp.Areas.Authenticated.Controllers;
 public class BooksController : Controller
 {
     private readonly ApplicationDbContext _db;
+    private readonly IWebHostEnvironment webHostEnvironment;
 
     // IWebHostEnvironment will help you take the image path
-    public BooksController(ApplicationDbContext db)
+    public BooksController(ApplicationDbContext db, IWebHostEnvironment webHost)
     {
         _db = db;
+        webHostEnvironment = webHost;
     }
 
     // GET
@@ -36,11 +38,17 @@ public class BooksController : Controller
     [HttpGet]
     public IActionResult CreateBooks()
     {
+        ViewBag.CategoryId = new SelectList(_db.Categories, "CategoryId", "Name");
+        ViewBag.PublishCompanyId = new SelectList(_db.PublishCompanies, "PublishCompanyId", "Name");
         return View();
     }
 // Store Owner request to Admin Create
+[HttpPost]
     public async Task<IActionResult> CreateBooks(AddBookViewModel BookModel)
     {
+        ViewBag.CategoryId = new SelectList(_db.Categories, "CategoryId", "Name", BookModel.CategoryId);
+        ViewBag.PublishCompanyId = new SelectList(_db.PublishCompanies, "PublishingCompanyId", "Name", BookModel.PublishCompanyId);
+        string uniqueFileName = UploadedFile(BookModel);
         var book = new Book()
         {
             Name = BookModel.Name,
@@ -48,7 +56,7 @@ public class BooksController : Controller
             Price = BookModel.Price,
             Description = BookModel.Description,
             Author = BookModel.Author,
-            Image = BookModel.Image,
+            Image = uniqueFileName,
             UpdateDate = BookModel.UpdateDate,
             CategoryId = BookModel.CategoryId,
             PublishCompanyId = BookModel.PublishCompanyId
@@ -75,7 +83,9 @@ public class BooksController : Controller
     [HttpGet]
     public async Task<IActionResult> ViewBooks(int id)
     {
+        
         var books = await _db.Books.FirstOrDefaultAsync(x => x.BookId == id);
+        
 
         if (books != null)
         {
@@ -103,6 +113,9 @@ public class BooksController : Controller
     [HttpPost]
     public async Task<IActionResult> ViewBooks(UpdateBookView model)
     {
+        ViewBag.CategoryId = new SelectList(_db.Categories, "CategoryId", "Name", model.CategoryId);
+        ViewBag.PublishCompanyId = new SelectList(_db.PublishCompanies, "PublishingCompanyId", "Name", model.PublishCompanyId);
+        string uniqueFileName = UploadedFile(model);
         var book = await _db.Books.FindAsync(model.BookId);
         if (book != null)
         {
@@ -135,22 +148,40 @@ public class BooksController : Controller
         return RedirectToAction("BooksIndex");
     }
 
-    [HttpPost("upload-image")]
-    public async Task<IActionResult> UploadImage(IFormFile image)
+    private string UploadedFile(AddBookViewModel model)
     {
-        // Code to handle uploaded image goes here
-        if (image != null && image.Length > 0)
+        string uniqueFileName = null;
+            
+        if (model.FronImage != null)
         {
-            var fileName = image.FileName;
-            var contentType = image.ContentType;
-            var content = new byte[image.Length];
-            await image.OpenReadStream().ReadAsync(content, 0, (int)image.Length);
-        
-            // Code to handle uploaded image goes here
+            string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "Images");
+            uniqueFileName = Guid.NewGuid().ToString() + "_" + model.FronImage.FileName;
+            string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                model.FronImage.CopyTo(fileStream);
+            }
+
         }
-    
-        // Handle case where no image was uploaded
-        return RedirectToAction("BooksIndex");
+        return uniqueFileName;
     }
+    private string UploadedFile(UpdateBookView model)
+    {
+        string uniqueFileName = null;
+            
+        if (model.FronImage != null)
+        {
+            string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "Images");
+            uniqueFileName = Guid.NewGuid().ToString() + "_" + model.FronImage.FileName;
+            string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                model.FronImage.CopyTo(fileStream);
+            }
+
+        }
+        return uniqueFileName;
+    }
+    
 }
 

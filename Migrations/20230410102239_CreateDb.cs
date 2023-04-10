@@ -75,14 +75,14 @@ namespace BookStoreApp.Migrations
                 name: "PublishCompanies",
                 columns: table => new
                 {
-                    PublishingCompanyId = table.Column<int>(type: "int", nullable: false)
+                    PublishCompanyId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Adress = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PublishCompanies", x => x.PublishingCompanyId);
+                    table.PrimaryKey("PK_PublishCompanies", x => x.PublishCompanyId);
                 });
 
             migrationBuilder.CreateTable(
@@ -242,7 +242,7 @@ namespace BookStoreApp.Migrations
                         name: "FK_Books_PublishCompanies_PublishCompanyId",
                         column: x => x.PublishCompanyId,
                         principalTable: "PublishCompanies",
-                        principalColumn: "PublishingCompanyId",
+                        principalColumn: "PublishCompanyId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
