@@ -11,7 +11,9 @@ using Microsoft.EntityFrameworkCore;
 namespace BookStoreApp.Areas.Authenticated.Controllers;
 
 [Area(SD.AuthenticatedArea)]
-[Authorize(Roles = SD.StoreOwnerRole)]
+
+
+
 public class BooksController : Controller
 {
     private readonly ApplicationDbContext _db;
@@ -36,7 +38,7 @@ public class BooksController : Controller
     {
         return View();
     }
-
+// Store Owner request to Admin Create
     public async Task<IActionResult> CreateBooks(AddBookViewModel BookModel)
     {
         var book = new Book()
@@ -150,6 +152,5 @@ public class BooksController : Controller
         // Handle case where no image was uploaded
         return RedirectToAction("BooksIndex");
     }
-    
 }
 

@@ -15,7 +15,6 @@ namespace BookStoreApp.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Cart> Carts { get; set; }
-
         
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }

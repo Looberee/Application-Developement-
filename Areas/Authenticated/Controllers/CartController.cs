@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApp.Areas.Authenticated.Controllers;
 [Area(SD.AuthenticatedArea)]
-[Authorize(Roles = SD.StoreOwnerRole)]
+
 public class CartController : Controller
 {
     private readonly ApplicationDbContext _db;
@@ -191,25 +191,19 @@ public class CartController : Controller
             _db.SaveChanges();
             HttpContext.Session.SetInt32(SD.ssShoppingCart, 0);
 
-            return RedirectToAction("OrderConfirmation", "Cart", 
-                new { id = ShoppingCartVm.Order.OrderId });
+            // return RedirectToAction("OrderConfirmation", "Cart", 
+            //     new { id = ShoppingCartVm.Order.OrderId });
+
+            return RedirectToAction(nameof(CartIndex));
         }
         
-        // order confirm 
-        public IActionResult OrderConfirmation(int id)
-        {
-            var claimIdentity = (ClaimsIdentity) User.Identity;
-            var claim = claimIdentity.FindFirst(ClaimTypes.NameIdentifier);
-            // var emailDb = _db.ApplicationUsers.Find(claim.Value).Email;
-            //
-            // MailContent content = new MailContent()
-            // {
-            //     To = emailDb,
-            //     Subject = "Thanks for order! Let's explore more",
-            //     Body = "<p>Order successfully!</p>"
-            // };
-            //
-            // _emailSender.SendMail(content);
-            return View(id);
-        }
+        // // order confirm 
+        // public IActionResult OrderConfirmation(int id)
+        // {
+        //     var claimIdentity = (ClaimsIdentity) User.Identity;
+        //     var claim = claimIdentity.FindFirst(ClaimTypes.NameIdentifier);
+        //     
+        //     
+        //     return View(id);
+        // }
 }

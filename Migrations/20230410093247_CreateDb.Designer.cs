@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStoreApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230408175328_createDB")]
-    partial class createDB
+    [Migration("20230410093247_CreateDb")]
+    partial class CreateDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -109,6 +109,9 @@ namespace BookStoreApp.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()

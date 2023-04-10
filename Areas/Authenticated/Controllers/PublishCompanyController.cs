@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApp.Areas.Authenticated.Controllers;
 [Area(SD.AuthenticatedArea)]
-[Authorize(Roles = SD.StoreOwnerRole)]
+
 public class PublishCompanyController : Controller
 {
     private readonly ApplicationDbContext context;

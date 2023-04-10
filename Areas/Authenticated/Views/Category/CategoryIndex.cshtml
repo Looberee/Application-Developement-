@@ -1,4 +1,7 @@
-﻿@model List<BookStoreApp.Models.Category>;
+﻿@using Microsoft.VisualBasic.CompilerServices
+@using System.Reflection.Metadata
+@using BookStoreApp.Utils
+@model List<BookStoreApp.Models.Category>;
 @{
 }
 
@@ -9,6 +12,7 @@
 			<th>Id</th>
 			<th>Name</th>
 			<th>Description</th>
+			<th>Is Approved</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -18,6 +22,18 @@
 				<td>@category.CategoryId</td>
 				<td>@category.Name</td>
 				<td>@category.Description</td>
+				<td>@category.IsApproved</td>
+				 <td>
+                                    @if (!category.IsApproved && User.IsInRole(SD.AdminRole))
+                                    {
+                                        <form method="post" action="@Url.Action("Approve", new { id = category.CategoryId })">
+                                            <button type="submit">Approve</button>
+                                        </form>
+                                        <form method="post" action="@Url.Action("Reject", new { id = category.CategoryId })">
+                                            <button type="submit">Reject</button>
+                                        </form>
+                                    }
+                                </td>
 				<td><a href="ViewCategory/@category.CategoryId">View</a></td>
 			</tr>
 		}

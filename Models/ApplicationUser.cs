@@ -21,4 +21,6 @@ public class ApplicationUser : IdentityUser
     public DateTime UpdatedAt { get; set; }
     public string UpdatedBy { get; set; }
     public bool IsDelete { get; set; }
+    
+    
 }
