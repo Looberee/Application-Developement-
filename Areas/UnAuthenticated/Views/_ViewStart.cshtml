@@ -1,0 +1,18 @@
+﻿@{
+    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        Layout = "_Layout1";
+    }
+    else if (User.Identity.IsAuthenticated && User.IsInRole("StoreOwner"))
+    {
+        Layout = "_Layout2";
+    }
+    else if (User.Identity.IsAuthenticated && User.IsInRole("Customer"))
+    {
+        Layout = "_Layout3";        
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+}
