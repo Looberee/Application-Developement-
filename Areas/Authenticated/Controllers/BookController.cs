@@ -9,11 +9,12 @@ using Microsoft.AspNetCore.Hosting;
 using System.Data;
 using WebApplication123.Utils;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
 
 namespace WebApplication123.Controllers
 {
     [Area(SD.AuthenticatedArea)]
-    [Authorize(Roles = SD.StoreOwnerRole)]
+    [Authorize(Roles = SD.StoreOwnerRole + "," + SD.CustomerRole)]
     public class BookController : Controller
     {
         private readonly ApplicationDbContext context;
@@ -57,9 +58,9 @@ namespace WebApplication123.Controllers
                 Category = BookModel.Category,
                 PublishCompany = BookModel.PublishCompany
             };
-            
 
-            
+
+
 
             foreach (var bookitem in context.Books.ToList())
             {
@@ -69,7 +70,7 @@ namespace WebApplication123.Controllers
                     var StoredQuantity = book.Quantity.ToString();
                     int ToStoredQuantity = int.Parse(StoredQuantity) + int.Parse(NewQuantity);
                     bookitem.Quantity = ToStoredQuantity.ToString();
-                    bookitem.UpdateDate = book.UpdateDate; 
+                    bookitem.UpdateDate = book.UpdateDate;
                     await context.SaveChangesAsync();
                     return RedirectToAction("BookIndex");
                 }
@@ -80,10 +81,10 @@ namespace WebApplication123.Controllers
             await context.Books.AddAsync(book);
             await context.SaveChangesAsync();
             return RedirectToAction("BookIndex");
-            
-            
-            
-     
+
+
+
+
         }
         [HttpGet]
         public async Task<IActionResult> ViewBook(int id)
@@ -156,11 +157,11 @@ namespace WebApplication123.Controllers
 
             return RedirectToAction("BookIndex");
         }
-       
+
         private string UploadedFile(AddBookViewModel model)
         {
             string uniqueFileName = null;
-            
+
             if (model.FronImage != null)
             {
                 string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "Images");
@@ -191,5 +192,44 @@ namespace WebApplication123.Controllers
             }
             return uniqueFileName;
         }
-    }
+        public async Task<IActionResult> BookProduct()
+        {
+			var book = await context.Books.ToListAsync();
+			return View(book);
+		}
+		public async Task<IActionResult> BookProductDetail(int id)
+        {
+			var book = await context.Books.FirstOrDefaultAsync(x => x.BookId == id);
+			ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name");
+			ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name");
+			if (book != null)
+			{
+				var viewmodel = new UpdateBookView()
+				{
+					BookId = book.BookId,
+					Name = book.Name,
+					Quantity = book.Quantity,
+					Price = book.Price,
+					Description = book.Description,
+					UpdateDate = book.UpdateDate,
+					Author = book.Author,
+					Image = book.Image,
+					CategoryId = book.CategoryId,
+					PublishCompanyId = book.PublishCompanyId
+
+				};
+
+				return await Task.Run(() => View("BookProductDetail", viewmodel));
+            }
+
+            return RedirectToAction("BookProduct");
+
+        }
+
+        public async Task<IActionResult> Cart()
+        {
+            return View();
+        }
+
+	}
 }

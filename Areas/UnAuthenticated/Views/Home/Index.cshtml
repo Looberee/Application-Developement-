@@ -1,8 +1,10 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    @if (User.Identity.IsAuthenticated && User.IsInRole("Customer"))
+    {
+        ViewData["Title"] = "Welcome Customer to Home Page";
+    }
+    else
+    {
+        ViewData["Title"] = "Home Page";     
+    }
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Home page <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>

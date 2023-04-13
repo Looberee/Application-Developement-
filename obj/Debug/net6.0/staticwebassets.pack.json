@@ -5,16 +5,132 @@
       "PackagePath": "staticwebassets\\WebApplication123.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\3c4d2cbb-d00a-4beb-84d6-c4c7fbb2b7d5_sample1.png",
-      "PackagePath": "staticwebassets\\Images\\3c4d2cbb-d00a-4beb-84d6-c4c7fbb2b7d5_sample1.png"
-    },
-    {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\65bfeb37-c83c-4d50-a6fa-1d746e03b548_ssss.png",
       "PackagePath": "staticwebassets\\Images\\65bfeb37-c83c-4d50-a6fa-1d746e03b548_ssss.png"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\8b0aedc2-3dd8-45df-be71-839af1e13263_35cc9c1794a19a204e541b94249c0f1f.jpg",
-      "PackagePath": "staticwebassets\\Images\\8b0aedc2-3dd8-45df-be71-839af1e13263_35cc9c1794a19a204e541b94249c0f1f.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
+      "PackagePath": "staticwebassets\\Images\\9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book10.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book11.JPG",
+      "PackagePath": "staticwebassets\\Images\\Book11.JPG"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book12.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book13.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book14.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book15.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book16.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book17.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book18.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book19.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book20.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book21",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book22.htm",
+      "PackagePath": "staticwebassets\\Images\\Book22.htm"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book22.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book23.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book3.webp",
+      "PackagePath": "staticwebassets\\Images\\Book3.webp"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book4.webp",
+      "PackagePath": "staticwebassets\\Images\\Book4.webp"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book8.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book9.jpg",
+      "PackagePath": "staticwebassets\\Images\\Book9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Image01.webp",
+      "PackagePath": "staticwebassets\\Images\\Image01.webp"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\af684410-da62-4096-914d-520242aa0b51_Book14.jpg",
+      "PackagePath": "staticwebassets\\Images\\af684410-da62-4096-914d-520242aa0b51_Book14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\biatruyen.webp",
+      "PackagePath": "staticwebassets\\Images\\biatruyen.webp"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\book5.png",
+      "PackagePath": "staticwebassets\\Images\\book5.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\d01dec51-de07-4f87-a633-192cb0407e88_Book15.jpg",
+      "PackagePath": "staticwebassets\\Images\\d01dec51-de07-4f87-a633-192cb0407e88_Book15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\de619514-edac-42e7-b936-b4aed899af9e_Book7.jpg",
+      "PackagePath": "staticwebassets\\Images\\de619514-edac-42e7-b936-b4aed899af9e_Book7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\download.webp",
+      "PackagePath": "staticwebassets\\Images\\download.webp"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\ea0462b7-908d-4485-aa84-6145b0c1439b_firebase1.png",
@@ -25,20 +141,444 @@
       "PackagePath": "staticwebassets\\Images\\f65c5da8-cb10-4485-945b-9e82311aeb62_sample3.png"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\sample3.png",
-      "PackagePath": "staticwebassets\\Images\\sample3.png"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\fbeebdaf-e3e7-461b-b07b-3ea0ebaaad2f_Book8.jpg",
+      "PackagePath": "staticwebassets\\Images\\fbeebdaf-e3e7-461b-b07b-3ea0ebaaad2f_Book8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-07.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-08.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-09.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\image01.jpg",
+      "PackagePath": "staticwebassets\\Images\\image01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\image02.png",
+      "PackagePath": "staticwebassets\\Images\\image02.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-11.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\css\\util.css",
+      "PackagePath": "staticwebassets\\css\\util.css"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Montserrat\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\PlayfairDisplay\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\Poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\iconic\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\iconic\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\fonts\\linearicons-v1.0.0\\icon-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\icon-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\js\\map-custom.js",
+      "PackagePath": "staticwebassets\\js\\map-custom.js"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\js\\slick-custom.js",
+      "PackagePath": "staticwebassets\\js\\slick-custom.js"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -267,6 +807,342 @@
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\MagnificPopup\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\vendor\\MagnificPopup\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\MagnificPopup\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\vendor\\MagnificPopup\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\MagnificPopup\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\vendor\\MagnificPopup\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\vendor\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\isotope\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\vendor\\isotope\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\external\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\external\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\index.html",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\jquery-ui.structure.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.structure.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\jquery-ui.structure.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.structure.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\jquery-ui.theme.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.theme.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\jqueryui\\jquery-ui.theme.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\css\\lightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\css\\lightbox.min.css",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\css\\lightbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\images\\close.png",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\images\\next.png",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\images\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\images\\prev.png",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\js\\lightbox-plus-jquery.js",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox-plus-jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\js\\lightbox-plus-jquery.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox-plus-jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\js\\lightbox-plus-jquery.min.map",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox-plus-jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\js\\lightbox.js",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\js\\lightbox.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\lightbox2\\js\\lightbox.min.map",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox.min.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\parallax100\\parallax100.js",
+      "PackagePath": "staticwebassets\\vendor\\parallax100\\parallax100.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\vendor\\slick\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\config.rb",
+      "PackagePath": "staticwebassets\\vendor\\slick\\config.rb"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\vendor\\slick\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\vendor\\slick\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\vendor\\slick\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\vendor\\slick\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\slick-theme.less",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick-theme.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\slick-theme.scss",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick-theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\slick.js",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\slick.less",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.less"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\vendor\\sweetalert\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\vendor\\sweetalert\\sweetalert.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebApplication123.Microsoft.AspNetCore.StaticWebAssets.props",
