@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using WebApplication123.Models;
 
-namespace _1670_AppDev.Models
+namespace WebApplication123.Models
 {
     public class OrderDetail
     {

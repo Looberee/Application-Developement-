@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebApplication123.Migrations
 {
-    public partial class createDB : Migration
+    public partial class BookStoreDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -254,8 +254,6 @@ namespace WebApplication123.Migrations
                 {
                     OrderId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderDate = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeliveryDate = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CustomerId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

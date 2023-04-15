@@ -3,16 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using WebApplication123.Models;
 
 
-namespace _1670_AppDev.Models
+namespace WebApplication123.Models
 {
     public class Order
     {
         [Key]
         public int OrderId { get; set; }
-        [Required]
-        public string OrderDate { get; set; }
-        [Required]
-        public string DeliveryDate { get; set; }
         [Required]
         public int CustomerId { get; set; }
         

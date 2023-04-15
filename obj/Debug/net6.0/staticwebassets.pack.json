@@ -157,6 +157,70 @@
       "PackagePath": "staticwebassets\\Images\\gallery-09.jpg"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\favicon.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-close.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-close.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-close2.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-close2.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-email.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-email.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-heart-01.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-heart-01.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-heart-02.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-heart-02.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-next.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-next.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-pay-01.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-pay-01.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-pay-02.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-pay-02.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-pay-03.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-pay-03.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-pay-04.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-pay-04.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-pay-05.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-pay-05.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\icon-prev.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\icon-prev.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\logo-02.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\logo-02.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\icons\\pin.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\pin.png"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\image01.jpg",
       "PackagePath": "staticwebassets\\Images\\image01.jpg"
     },

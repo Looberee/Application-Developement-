@@ -225,11 +225,7 @@ namespace WebApplication123.Controllers
             return RedirectToAction("BookProduct");
 
         }
-
-        public async Task<IActionResult> Cart()
-        {
-            return View();
-        }
+        
 
 	}
 }
