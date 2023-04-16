@@ -56,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xCb29rXFZpZXdCb29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/USER/source/repos/WebApplication123/WebApplication123/Areas/Authenticated/Views/Cart/CartIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xDYXJ0XENhcnRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/USER/source/repos/WebApplication123/WebApplication123/Areas/Authenticated/Views/Category/CategoryIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xDYXRlZ29yeVxDYXRlZ29yeUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,10 +70,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/USER/source/repos/WebApplication123/WebApplication123/Areas/Authenticated/Views/Category/ViewCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xDYXRlZ29yeVxWaWV3Q2F0ZWdvcnkuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/USER/source/repos/WebApplication123/WebApplication123/Areas/Authenticated/Views/OrderDetail/CartIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xPcmRlckRldGFpbFxDYXJ0SW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/source/repos/WebApplication123/WebApplication123/Areas/Authenticated/Views/Order/OrderIndex.cshtml]

@@ -279,6 +279,27 @@ namespace WebApplication123.Migrations
                     b.ToTable("Books");
                 });
 
+            modelBuilder.Entity("WebApplication123.Models.Cart", b =>
+                {
+                    b.Property<int>("CartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"), 1L, 1);
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("Carts");
+                });
+
             modelBuilder.Entity("WebApplication123.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -508,6 +529,17 @@ namespace WebApplication123.Migrations
                     b.Navigation("Category");
 
                     b.Navigation("PublishCompany");
+                });
+
+            modelBuilder.Entity("WebApplication123.Models.Cart", b =>
+                {
+                    b.HasOne("WebApplication123.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
                 });
 
             modelBuilder.Entity("WebApplication123.Models.Customer", b =>

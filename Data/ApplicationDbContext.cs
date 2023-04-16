@@ -19,7 +19,8 @@ namespace WebApplication123.Data
         public DbSet<PublishCompany> PublicCompanies { get; set; }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+		public DbSet<Cart> Carts { get; set; }
 
 
-    }
+	}
 }

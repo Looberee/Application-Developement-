@@ -28,7 +28,7 @@ namespace WebApplication123.Controllers
         [HttpGet]
         public async Task<IActionResult> BookIndex()
         {
-            var book = await context.Books.ToListAsync();
+            var book = await context.Books.Include(_ => _.Category).Include(_ => _.PublishCompany).ToListAsync();
             return View(book);
         }
         [HttpGet]
@@ -204,7 +204,7 @@ namespace WebApplication123.Controllers
 			ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name");
 			if (book != null)
 			{
-				var viewmodel = new UpdateBookView()
+				var viewmodel = new Book()
 				{
 					BookId = book.BookId,
 					Name = book.Name,

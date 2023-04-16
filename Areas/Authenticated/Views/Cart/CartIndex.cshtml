@@ -1,4 +1,4 @@
-﻿@model List<WebApplication123.Models.OrderDetail>;
+﻿@model List<WebApplication123.Models.Cart>;
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -35,7 +35,7 @@
 								<tr class="table_row">
 									<td class="column-1">
 										<div class="how-itemcart1">
-											<img src="~/Images/@item.Book.Image" alt="IMG">
+											<img src="~/Images/@item.Book.Image" alt="@item.Book.Description">
 										</div>
 									</td>
 									<td class="column-2">@item.Book.Name</td>
@@ -46,14 +46,19 @@
 												<i class="fs-16 zmdi zmdi-minus"></i>
 											</div>
 
-											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product1" value="1">
+											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product1" value="@item.Quantity">
 
 											<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
 												<i class="fs-16 zmdi zmdi-plus"></i>
 											</div>
 										</div>
 									</td>
-									<td class="column-5">$777</td>
+									@{
+										var total = item.Book.Price * item.Quantity;
+									}
+									<td class="column-5">
+										$ @total
+									</td>
 								</tr>
 							}
 						</table>
@@ -125,8 +130,15 @@
 						</div>
 
 						<div class="size-209 p-t-1">
+							@{
+								decimal grand_total = 0;
+								foreach (var item in Model)
+								{
+									grand_total += (item.Book.Price * item.Quantity);
+								}
+							}
 							<span class="mtext-110 cl2">
-								$79.65
+								$@grand_total
 							</span>
 						</div>
 					</div>

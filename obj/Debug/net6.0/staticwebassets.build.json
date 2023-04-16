@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5qjNvPhpj7wyk1Xn+Vk5ATg1uozoyz0p1Lf65lihtwo=",
+  "Hash": "5uvY/fNWpo/XiYWOuNtOHsI6+pE7mIsjggcuPXdD8zs=",
   "Source": "WebApplication123",
   "BasePath": "_content/WebApplication123",
   "Mode": "Default",
@@ -2737,6 +2737,40 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Poppins\\Poppins-ThinItalic.ttf"
     },
     {
+      "Identity": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\65bfeb37-c83c-4d50-a6fa-1d746e03b548_ssss.png",
       "SourceId": "WebApplication123",
       "SourceType": "Discovered",
@@ -2769,6 +2803,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\9d9e6b27-1a11-4f64-b47d-62c49d0aa594_Book2.jpg",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/9d9e6b27-1a11-4f64-b47d-62c49d0aa594_Book2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\9d9e6b27-1a11-4f64-b47d-62c49d0aa594_Book2.jpg"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\af684410-da62-4096-914d-520242aa0b51_Book14.jpg",
