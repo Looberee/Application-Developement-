@@ -10,6 +10,8 @@ using System.Data;
 using WebApplication123.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
+using System.Dynamic;
+
 
 namespace WebApplication123.Controllers
 {
@@ -199,6 +201,7 @@ namespace WebApplication123.Controllers
 		}
 		public async Task<IActionResult> BookProductDetail(int id)
         {
+
 			var book = await context.Books.FirstOrDefaultAsync(x => x.BookId == id);
 			ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name");
 			ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name");
@@ -225,7 +228,9 @@ namespace WebApplication123.Controllers
             return RedirectToAction("BookProduct");
 
         }
-        
 
-	}
+     
+
+
+    }
 }

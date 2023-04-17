@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
+using System.Dynamic;
 using WebApplication123.Data;
 using WebApplication123.Models;
+using WebApplication123.ModelsCRUD.Book;
 using WebApplication123.Utils;
 
 namespace WebApplication123.Areas.Authenticated.Controllers
@@ -27,6 +29,41 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 			return View(cartitem);
 		}
 
+
+		public async Task<IActionResult> Plus(int cartId)
+		{
+			
+			var cart = await context.Carts.Include(p => p.Book).FirstOrDefaultAsync(c => c.CartId == cartId);
+
+			if (cart == null)
+			{
+				return NotFound();
+			}
+
+			cart.Quantity += 1;
+			await context.SaveChangesAsync();
+			return RedirectToAction(nameof(CartIndex));
+		}
+
+		public async Task<IActionResult> Minus(int cartId)
+		{
+			var cart = await context.Carts.Include(p => p.Book).FirstOrDefaultAsync(c => c.CartId == cartId);
+
+			if (cart.Quantity == 1)
+			{
+				var cnt = context.Carts.ToList().Count;
+				context.Carts.Remove(cart);
+				await context.SaveChangesAsync();
+			}
+			else
+			{
+				cart.Quantity -= 1;
+				await context.SaveChangesAsync();
+			}
+
+			return RedirectToAction(nameof(CartIndex));
+		}
+
 		public async Task<IActionResult> AddToCart(int id)
 		{
 			var book = await context.Books.FirstOrDefaultAsync(x => x.BookId == id);
@@ -36,14 +73,13 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 				{
 					BookId = book.BookId,
 					Book = book,
-					Quantity = 10
+					Quantity = 1
 				};
 
 				foreach (var item in context.Carts.Include(_ => _.Book).ToList()) 
 				{
 					if (item.BookId == cart_item.BookId)
 					{
-						Thread.Sleep(5000);
 						return RedirectToAction("CartIndex");
 					}
 				}
@@ -54,12 +90,32 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 				Thread.Sleep(2500);
 				return RedirectToAction("BookProduct", "Book");
 				
-				
-
-				
 			}
 
 			return RedirectToAction("CartIndex");
+		}
+
+		public async Task<IActionResult> DeleteCartItem(int id)
+		{
+			var cart_item = await context.Carts.FirstOrDefaultAsync(_ => _.BookId == id);
+
+			if (cart_item != null)
+			{
+				context.Carts.Remove(cart_item);
+
+
+				await context.SaveChangesAsync();
+
+				return RedirectToAction("CartIndex");
+			}
+
+			return RedirectToAction("CartIndex");
+		}
+		public async void Add2Model()
+		{
+			dynamic expand = new ExpandoObject();
+			expand.Book = context.Books.ToList();
+			expand.Cart = context.Carts.ToList();
 		}
 	}
 }

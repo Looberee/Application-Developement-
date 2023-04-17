@@ -1,44 +1,4 @@
-﻿/*------------------------------------------------------------------
-Project:  
-Version:  
-Last change:  
-Assigned to:  Le Xuan Bach
-Primary use:  Company
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[LAYOUT]
-
-* body
-  + Header / header
-  + Page Content / .page-content .name-page
-        + Section Layouts / section .name-section
-        ...
-  + Footer / footer
-
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[COLOR CODES]
-
-# Text Color      :  
-# Primary Color 01:  
-# Primary Color 02:   
-# Primary Color 03:  
-
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TYPOGRAPHY]
-
-Body            : 16px/1.6 '', Arial, sans-serif;
-Title           : 18px/1.6 '', Arial, sans-serif;
-Paragrap        : 18px/1.6 '', Arial, sans-serif;
-Input, textarea : 14px/1.6 '', Arial, sans-serif;
--------------------------------------------------------------------*/
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
+﻿
 @font-face {
     font-family: Poppins-Regular;
     src: url('../fonts/Poppins/Poppins-Regular.ttf');
@@ -1908,7 +1868,7 @@ input.num-product {
 [ Table Shopping Cart ]*/
 
 .wrap-table-shopping-cart {
-    overflow: auto;
+    overflow :hidden;
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
 }
@@ -1916,7 +1876,7 @@ input.num-product {
 .table-shopping-cart {
     border-collapse: collapse;
     width: 100%;
-    min-width: 680px;
+    min-width: 700px;
 }
 
     .table-shopping-cart tr {
