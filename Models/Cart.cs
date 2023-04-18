@@ -18,5 +18,7 @@ namespace WebApplication123.Models
 
 		[ForeignKey("BookId")]
 		public Book Book { get; set; }
-	}
+        [Required]
+        public decimal Total { get; set; }
+    }
 }

@@ -12,7 +12,7 @@ using WebApplication123.Data;
 namespace WebApplication123.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230415162750_BookStoreDB")]
+    [Migration("20230418230918_BookStoreDB")]
     partial class BookStoreDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -295,6 +295,9 @@ namespace WebApplication123.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("CartId");
 
                     b.HasIndex("BookId");
@@ -325,17 +328,10 @@ namespace WebApplication123.Migrations
 
             modelBuilder.Entity("WebApplication123.Models.Customer", b =>
                 {
-                    b.Property<int>("CustomerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"), 1L, 1);
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BirthDay")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -343,25 +339,11 @@ namespace WebApplication123.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Gender")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("CustomerId");
-
-                    b.HasIndex("UserId");
+                    b.HasKey("UserId");
 
                     b.ToTable("Customers");
                 });
@@ -374,12 +356,13 @@ namespace WebApplication123.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"), 1L, 1);
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("OrderId");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Orders");
                 });
@@ -557,13 +540,13 @@ namespace WebApplication123.Migrations
 
             modelBuilder.Entity("WebApplication123.Models.Order", b =>
                 {
-                    b.HasOne("WebApplication123.Models.Customer", "Customer")
+                    b.HasOne("WebApplication123.Models.Customer", "User")
                         .WithMany()
-                        .HasForeignKey("CustomerId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("WebApplication123.Models.OrderDetail", b =>

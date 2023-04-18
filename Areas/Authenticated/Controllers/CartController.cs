@@ -23,6 +23,8 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 			this.context = context;
 			webHostEnvironment = webHost;
 		}
+
+		[HttpGet]
 		public async Task<IActionResult> CartIndex()
 		{
 			var cartitem = await context.Carts.Include(_ => _.Book).ToListAsync();
@@ -30,9 +32,10 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 		}
 
 
+
 		public async Task<IActionResult> Plus(int cartId)
 		{
-			
+
 			var cart = await context.Carts.Include(p => p.Book).FirstOrDefaultAsync(c => c.CartId == cartId);
 
 			if (cart == null)
@@ -41,7 +44,8 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 			}
 
 			cart.Quantity += 1;
-			await context.SaveChangesAsync();
+            cart.Total = cart.Quantity * cart.Book.Price;
+            await context.SaveChangesAsync();
 			return RedirectToAction(nameof(CartIndex));
 		}
 
@@ -58,7 +62,8 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 			else
 			{
 				cart.Quantity -= 1;
-				await context.SaveChangesAsync();
+                cart.Total = cart.Quantity * cart.Book.Price;
+                await context.SaveChangesAsync();
 			}
 
 			return RedirectToAction(nameof(CartIndex));
@@ -67,7 +72,7 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 		public async Task<IActionResult> AddToCart(int id)
 		{
 			var book = await context.Books.FirstOrDefaultAsync(x => x.BookId == id);
-			if (book != null) 
+			if (book != null)
 			{
 				var cart_item = new Cart()
 				{
@@ -76,20 +81,22 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 					Quantity = 1
 				};
 
-				foreach (var item in context.Carts.Include(_ => _.Book).ToList()) 
+				cart_item.Total = cart_item.Quantity * cart_item.Book.Price;
+
+				foreach (var item in context.Carts.Include(_ => _.Book).ToList())
 				{
 					if (item.BookId == cart_item.BookId)
 					{
 						return RedirectToAction("CartIndex");
 					}
 				}
-				
+
 				await context.Carts.AddAsync(cart_item);
 				await context.SaveChangesAsync();
 
 				Thread.Sleep(2500);
 				return RedirectToAction("BookProduct", "Book");
-				
+
 			}
 
 			return RedirectToAction("CartIndex");
@@ -111,11 +118,6 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 
 			return RedirectToAction("CartIndex");
 		}
-		public async void Add2Model()
-		{
-			dynamic expand = new ExpandoObject();
-			expand.Book = context.Books.ToList();
-			expand.Cart = context.Carts.ToList();
-		}
+
 	}
 }

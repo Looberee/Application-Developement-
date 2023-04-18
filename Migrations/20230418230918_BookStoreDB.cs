@@ -194,19 +194,14 @@ namespace WebApplication123.Migrations
                 name: "Customers",
                 columns: table => new
                 {
-                    CustomerId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    BirthDay = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Customers", x => x.CustomerId);
+                    table.PrimaryKey("PK_Customers", x => x.UserId);
                     table.ForeignKey(
                         name: "FK_Customers_AspNetUsers_UserId",
                         column: x => x.UserId,
@@ -254,16 +249,16 @@ namespace WebApplication123.Migrations
                 {
                     OrderId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CustomerId = table.Column<int>(type: "int", nullable: false)
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Orders", x => x.OrderId);
                     table.ForeignKey(
-                        name: "FK_Orders_Customers_CustomerId",
-                        column: x => x.CustomerId,
+                        name: "FK_Orders_Customers_UserId",
+                        column: x => x.UserId,
                         principalTable: "Customers",
-                        principalColumn: "CustomerId",
+                        principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -274,7 +269,8 @@ namespace WebApplication123.Migrations
                     CartId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Quantity = table.Column<int>(type: "int", nullable: false),
-                    BookId = table.Column<int>(type: "int", nullable: false)
+                    BookId = table.Column<int>(type: "int", nullable: false),
+                    Total = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -369,11 +365,6 @@ namespace WebApplication123.Migrations
                 column: "BookId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Customers_UserId",
-                table: "Customers",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_OrderDetails_BookId",
                 table: "OrderDetails",
                 column: "BookId");
@@ -384,9 +375,9 @@ namespace WebApplication123.Migrations
                 column: "OrderId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Orders_CustomerId",
+                name: "IX_Orders_UserId",
                 table: "Orders",
-                column: "CustomerId");
+                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

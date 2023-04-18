@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<WebApplication123.Models.OrderDetail>
+@{
 	Layout = "_Layout2";
 }
 <h1>Customer Ordered</h1>
@@ -14,6 +15,16 @@
 		</tr>
 	</thead>
 	<tbody>
-		
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>@item.OrderDetailId</td>
+				<td>@item.Order.User.Name</td>
+				<td>@item.Book.Name</td>
+				<td>@item.Quantity</td>
+				<td>Total</td>
+				<td>Action</td>
+			</tr>
+		}
 	</tbody>
 </table>

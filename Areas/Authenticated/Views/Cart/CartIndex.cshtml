@@ -27,11 +27,6 @@
 								<th class="column-4">Quantity</th>
 								<th class="column-5">Total</th>
 							</tr>
-							@if (Model.Count == 0)
-							{
-							}
-							else
-							{
 							@foreach (var item in Model)
 							{
 								<tr class="table_row">
@@ -65,10 +60,9 @@
 										var total = item.Book.Price * item.Quantity;
 									}
 									<td class="column-5">
-										$ @total
+										$@item.Total
 									</td>
 								</tr>
-							}
 							}
 						</table>
 					</div>
@@ -114,10 +108,10 @@
 							</span>
 						</div>
 					</div>
-
-					<a href="#" class="flex-c-m stext-101 cl0 size-101 text-light bg1 bor1 hov-btn1 p-lr-15 trans-04 js-order-detail">
+					<a asp-area="Authenticated" asp-controller="Order" asp-action="OrderBook" class="flex-c-m stext-101 cl0 size-101 text-light bg1 bor1 hov-btn1 p-lr-15 trans-04 js-order-detail">
 						Order
 					</a>
+
 				</div>
 			</div>
 		</div>
