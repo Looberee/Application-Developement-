@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 using WebApplication123.Models;
 
 namespace WebApplication123.Areas.UnAuthenticated.Controllers
@@ -16,6 +17,25 @@ namespace WebApplication123.Areas.UnAuthenticated.Controllers
 
         public IActionResult Index()
         {
+            /*var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);*/
+
+            // get the role of current signed in
+            /*var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, "1234"),
+                new Claim(ClaimTypes.Role, "Admin")
+            };
+            var identity = new ClaimsIdentity(claims, "MyAuthType");
+
+            var roleClaim = claimsIdentity.FindFirst(ClaimTypes.Role);
+            if (roleClaim == null)
+            {
+                return View();
+            }
+
+            string role = roleClaim.Value;
+            ViewData["Message"] = "Hello " + role + "TO OUR STORE!";*/
             return View();
         }
 

@@ -21,8 +21,8 @@ namespace WebApplication123.Models
 		public DateTime UpdateDate { get; set; }
 		[Required]
 		public string Author { get; set; }
-		[Required]
-		public string Image { get; set; }
+        [Required]
+        public string Image { get; set; }
 		[Required]
         public int CategoryId { get; set; }
         [Required]

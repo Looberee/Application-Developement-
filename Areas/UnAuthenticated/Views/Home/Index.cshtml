@@ -3,11 +3,13 @@
     {
         Layout = "_Layout1";
         ViewData["Title"] = "Admin Page";
+      
     }
     else if (User.Identity.IsAuthenticated && User.IsInRole("StoreOwner"))
     {
         Layout = "_Layout2";
         ViewData["Title"] = "StoreOwner Page";
+   
     }
     else if (User.Identity.IsAuthenticated && User.IsInRole("Customer"))
     {
@@ -19,4 +21,7 @@
         Layout = "_Layout";
         ViewData["Title"] = "Normal Page";
     }
+  
 }
+
+

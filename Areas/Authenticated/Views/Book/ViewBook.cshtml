@@ -5,6 +5,7 @@
 
 <h1>Edit Book</h1>
 <form method="post" action="ViewBook" enctype="multipart/form-data">
+    <input type="hidden" asp-for="BookId" />
     <div class="mb-3">
         <label for="BookId" class="form-label">Book Id:</label>
         <input type="text" class="form-control" id="BookId" asp-for="BookId" readonly>
@@ -35,9 +36,9 @@
     </div>
     <div class="mb-3">
         <label for="BookImg" class="form-label">Book Image:</label>
-        <input type="file" asp-for="FronImage" class="form-control" id="BookImg" onchange="document.getElementById('FrontImagePrv').src = window.URL.createObjectURL(this.files[0])" />
+        <input type="file" asp-for="FronImage" value="~/Images/@Model.Image" src="~/Images/@Model.Image" class="form-control" id="BookImg" onchange="document.getElementById('FrontImagePrv').src = window.URL.createObjectURL(this.files[0])" />
         <img id="FrontImagePrv" src="~/Images/@Model.Image" width="150" height="150" style="border:1px; margin-top:20px; margin-left:120px" />
-        <input type="text" class="form-control" id="BookImg" asp-for="Image" style="display:none">
+        <input type="text" class="form-control" id="BookImg" style="display:none">
     </div>
     <div class="mb-3">
         <label for="BookCategoryId" class="form-label">CategoryId :</label>
@@ -47,6 +48,6 @@
         <label for="BookPublishId" class="form-label">PublishId:</label>
         @Html.DropDownListFor(model => model.PublishCompanyId, (SelectList)ViewBag.Company_id, new { @class = "form-control" })
     </div>
-    <button type="submit" class="btn btn-primary">Edit</button>
+    <button type="submit" asp-controller="Book" asp-action="ViewBook" class="btn btn-primary">Edit</button>
     <button type="submit" class="btn btn-danger" asp-action="DeleteBook" asp-controller="Book">Delete</button>
 </form>

@@ -19,6 +19,7 @@ namespace WebApplication123.Controllers
     [Authorize(Roles = SD.StoreOwnerRole + "," + SD.CustomerRole)]
     public class BookController : Controller
     {
+        string global_image_change_url = "";
         private readonly ApplicationDbContext context;
         private readonly IWebHostEnvironment webHostEnvironment;
 
@@ -55,6 +56,7 @@ namespace WebApplication123.Controllers
                 UpdateDate = BookModel.UpdateDate,
                 Author = BookModel.Author,
                 Image = uniqueFileName,
+                FronImage = BookModel.FronImage,
                 CategoryId = BookModel.CategoryId,
                 PublishCompanyId = BookModel.PublishCompanyId,
                 Category = BookModel.Category,
@@ -94,9 +96,9 @@ namespace WebApplication123.Controllers
             ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name");
             ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name");
             var book = await context.Books.FirstOrDefaultAsync(x => x.BookId == id);
-            if (book != null)
+			if (book != null)
             {
-                var viewmodel = new UpdateBookView()
+				var viewmodel = new UpdateBookView()
                 {
                     BookId = book.BookId,
                     Name = book.Name,
@@ -106,11 +108,13 @@ namespace WebApplication123.Controllers
                     UpdateDate = book.UpdateDate,
                     Author = book.Author,
                     Image = book.Image,
+                    FronImage = book.FronImage,
                     CategoryId = book.CategoryId,
                     PublishCompanyId = book.PublishCompanyId
 
                 };
 
+                global_image_change_url = book.Image;
                 return await Task.Run(() => View("ViewBook", viewmodel));
             }
 
@@ -121,8 +125,8 @@ namespace WebApplication123.Controllers
         {
             ViewBag.Category_id = new SelectList(context.Categories, "CategoryId", "Name", model.CategoryId);
             ViewBag.Company_id = new SelectList(context.PublicCompanies, "PublishingCompanyId", "Name", model.PublishCompanyId);
-            var book = await context.Books.FindAsync(model.BookId);
-            string uniqueFileName = UploadedFile(model);
+            var book = await context.Books.FirstOrDefaultAsync(x => x.BookId == model.BookId);
+            string change_img = UploadedFile(model);
             if (book != null)
             {
                 book.Name = model.Name;
@@ -131,14 +135,24 @@ namespace WebApplication123.Controllers
                 book.Description = model.Description;
                 book.UpdateDate = model.UpdateDate;
                 book.Author = model.Author;
-                book.Image = uniqueFileName;
+                if (change_img != null)
+                {
+                    book.Image = change_img;
+                }
                 book.CategoryId = model.CategoryId;
                 book.PublishCompanyId = model.PublishCompanyId;
 
                 await context.SaveChangesAsync();
-
-                return RedirectToAction("BookIndex");
             }
+            else
+            {
+                return NotFound("Book Not Found");
+
+            }
+
+
+
+            await context.SaveChangesAsync();
 
             return RedirectToAction("BookIndex");
         }
@@ -194,7 +208,24 @@ namespace WebApplication123.Controllers
             }
             return uniqueFileName;
         }
-        public async Task<IActionResult> BookProduct()
+		private string UploadedFile(Book model)
+		{
+			string uniqueFileName = null;
+
+			if (model.FronImage != null)
+			{
+				string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "Images");
+				uniqueFileName = Guid.NewGuid().ToString() + "_" + model.FronImage.FileName;
+				string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+				using (var fileStream = new FileStream(filePath, FileMode.Create))
+				{
+					model.FronImage.CopyTo(fileStream);
+				}
+
+			}
+			return uniqueFileName;
+		}
+		public async Task<IActionResult> BookProduct()
         {
 			var book = await context.Books.ToListAsync();
 			return View(book);
