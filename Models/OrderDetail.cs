@@ -18,5 +18,7 @@ namespace WebApplication123.Models
         public int OrderId { get; set; }
         [ForeignKey("OrderId")]
         public Order Order { get; set; }
+        [Required]
+        public decimal Total { get; set; }
     }
 }

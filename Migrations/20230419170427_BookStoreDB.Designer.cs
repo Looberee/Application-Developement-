@@ -12,7 +12,7 @@ using WebApplication123.Data;
 namespace WebApplication123.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230419161733_BookStoreDB")]
+    [Migration("20230419170427_BookStoreDB")]
     partial class BookStoreDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -383,6 +383,9 @@ namespace WebApplication123.Migrations
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("OrderDetailId");
 

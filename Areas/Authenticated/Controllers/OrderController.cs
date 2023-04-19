@@ -68,7 +68,8 @@ namespace WebApplication123.Controllers
 					Quantity = book.Quantity,
 					BookId = book.BookId,
 					OrderId = order.OrderId,
-					Book = book_object.Book
+					Book = book_object.Book,
+					Total = book.Total
 				};
 
 				await context.AddAsync(orderDetail);

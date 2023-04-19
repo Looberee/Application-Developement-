@@ -382,6 +382,9 @@ namespace WebApplication123.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("OrderDetailId");
 
                     b.HasIndex("BookId");
