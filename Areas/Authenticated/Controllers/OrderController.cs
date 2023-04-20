@@ -45,9 +45,12 @@ namespace WebApplication123.Controllers
 				Address = user.Address,
 				User = user
 			};
-
-			await context.Customers.AddAsync(customer);
-			await context.SaveChangesAsync();
+			if (!context.Customers.Contains(customer))
+			{
+				await context.Customers.AddAsync(customer);
+				await context.SaveChangesAsync();
+			}
+			
 
 			var order = new Order()
 			{
@@ -82,6 +85,15 @@ namespace WebApplication123.Controllers
 				await context.SaveChangesAsync();
 			}
 
+			foreach (var order_book in order_list)
+			{
+				var stored_book = await context.Books.FirstOrDefaultAsync(x => x.BookId == order_book.BookId);
+				int book_quantity_inStored = int.Parse(stored_book.Quantity);
+				book_quantity_inStored -= order_book.Quantity;
+				stored_book.Quantity = book_quantity_inStored.ToString();
+
+				await context.SaveChangesAsync();
+			}
 
 			await context.SaveChangesAsync();
 			return RedirectToAction("BookProduct", "Book");
