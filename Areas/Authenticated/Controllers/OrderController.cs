@@ -78,7 +78,6 @@ namespace WebApplication123.Controllers
 				await context.AddAsync(orderDetail);
 				await context.SaveChangesAsync();
 			}
-
 			foreach (var book in order_list)
 			{
 				context.Carts.Remove(book);

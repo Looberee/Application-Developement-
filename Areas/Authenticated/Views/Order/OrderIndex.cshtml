@@ -12,7 +12,7 @@
 			<th>Book Name</th>
 			<th>Ordered Quantity</th>
 			<th>Total Price</th>
-			<th>Action</th>
+			
 		</tr>
 	</thead>
 	<tbody>
@@ -25,15 +25,11 @@
 				<td>@item.Book.Name</td>
 				<td>@item.Quantity</td>
 				<td>@item.Total</td>
-				<td>
-				<a
-					class="btn btn-primary"
-					asp-controller="Order"
-					asp-action="DeleteAllOrders"
-					asp-route-id="@item.OrderId">
-					CheckOut
-				</a>
+				<td><button class="btn btn-primary" asp-controller="Order" asp-action="DeleteAllOrders" asp-route-id="@item.OrderId">CheckOut</button> </td>
+			 
+				
 			</tr>
 		}
+	
 	</tbody>
 </table>

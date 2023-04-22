@@ -15,8 +15,8 @@
 			<th>Updated Date</th>
 			<th>Author</th>
 			<th>Image</th>
-			<th>CategoryId</th>
-			<th>PublishCompanyId</th>
+			<th>Category Name</th>
+			<th>PublishCompany Name</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -31,11 +31,11 @@
 				<td>@book.UpdateDate</td>
 				<td>@book.Author</td>
 				<td><img src="~/Images/@book.Image" style="width: 75px; height:75px;" /></td>
-				<td>@book.CategoryId</td>
-				<td>@book.PublishCompanyId</td>
+				<td>@book.Category.Name</td>
+				<td>@book.PublishCompany.Name</td>
 				<td><a href="ViewBook/@book.BookId" class="btn btn-outline-success">View</a></td>
 			</tr>
 		}
 	</tbody>
 </table>
-<a href="CreateBook" class="btn btn-outline-primary">Create</a>
+<a href="CreateBook" class="btn btn-outline-primary">New Books</a>
