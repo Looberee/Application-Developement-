@@ -8,6 +8,7 @@ using WebApplication123.Utils;
 
 namespace WebApplication123.Areas.Authenticated.Controllers
 {
+    [Area(SD.AuthenticatedArea)]
     public class UserController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -43,33 +44,7 @@ namespace WebApplication123.Areas.Authenticated.Controllers
             // ReSharper disable once Mvc.ViewNotResolved
             return View(userList.ToList());
         }
-
-
-        // lock and unlock
-
-        [HttpGet]
-        public async Task<IActionResult> LockUnlock(string id)
-        {
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-
-            var userNeedToLock = _db.ApplicationUsers.Where(u => u.Id == id).First();
-
-            if (userNeedToLock.Id == claims.Value)
-            {
-                // hien ra loi ban dang khoa tai khoan cua chinh minh
-            }
-
-            if (userNeedToLock.LockoutEnd != null && userNeedToLock.LockoutEnd > DateTime.Now)
-                userNeedToLock.LockoutEnd = DateTime.Now;
-            else
-                userNeedToLock.LockoutEnd = DateTime.Now.AddYears(1000);
-
-            _db.SaveChanges();
-            return RedirectToAction(nameof(AdminIndex));
-        }
-
-
+        
         [HttpGet]
         public async Task<IActionResult> Delete(string id)
         {

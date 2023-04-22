@@ -29,10 +29,10 @@
                 @if (!category.IsApproved && User.IsInRole(SD.AdminRole))
                 {
                     <form method="post" action="@Url.Action("Approve", new { id = category.CategoryId })">
-                        <button type="submit">Approve</button>
+                        <button type="submit" class="btn btn-primary">Approve</button>
                     </form>
                     <form method="post" action="@Url.Action("Reject", new { id = category.CategoryId })">
-                        <button type="submit">Reject</button>
+                        <button type="submit" class="btn btn-danger">Reject</button>
                     </form>
                 }
             </td>

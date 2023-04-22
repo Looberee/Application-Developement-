@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/YUc7rtvBfeLoE4tc0zZvY1oTJBZRQF5SKaf73nz9aw=",
+  "Hash": "ilFZ+Z90KTBdMVKrGjRBFflk+1UlEPhacCS33woqc1o=",
   "Source": "WebApplication123",
   "BasePath": "_content/WebApplication123",
   "Mode": "Default",
@@ -3026,6 +3026,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
     },
     {
+      "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\55042a67-fdf1-438f-9da9-19770c77c995_af684410-da62-4096-914d-520242aa0b51_Book14.jpg",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\1670\\Application-Developement-\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/55042a67-fdf1-438f-9da9-19770c77c995_af684410-da62-4096-914d-520242aa0b51_Book14.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\55042a67-fdf1-438f-9da9-19770c77c995_af684410-da62-4096-914d-520242aa0b51_Book14.jpg"
+    },
+    {
       "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\5f04ce54-597f-4db3-823e-15f9a6a78893_896448bb-a8c1-4899-879a-a200d0b2becb_Book4.webp",
       "SourceId": "WebApplication123",
       "SourceType": "Discovered",
@@ -3757,6 +3774,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\Book9.jpg"
     },
     {
+      "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\c0dd75cc-cdd8-4cf7-934f-079a70128611_biatruyen.webp",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\1670\\Application-Developement-\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/c0dd75cc-cdd8-4cf7-934f-079a70128611_biatruyen.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\c0dd75cc-cdd8-4cf7-934f-079a70128611_biatruyen.webp"
+    },
+    {
       "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\c9d6b20c-5269-460a-9643-68a6e5df9354_Book11.JPG",
       "SourceId": "WebApplication123",
       "SourceType": "Discovered",
@@ -4454,6 +4488,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\image02.png"
     },
     {
+      "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\istockphoto-899442422-612x612.jpg",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\1670\\Application-Developement-\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/istockphoto-899442422-612x612.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\istockphoto-899442422-612x612.jpg"
+    },
+    {
       "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\logo.png",
       "SourceId": "WebApplication123",
       "SourceType": "Discovered",
@@ -4486,6 +4537,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\product-11.jpg"
+    },
+    {
+      "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\Screenshot 2023-04-20 102121.png",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\1670\\Application-Developement-\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/Screenshot 2023-04-20 102121.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Screenshot 2023-04-20 102121.png"
     },
     {
       "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\js\\main.js",

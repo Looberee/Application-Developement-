@@ -25,7 +25,14 @@
 				<td>@item.Book.Name</td>
 				<td>@item.Quantity</td>
 				<td>@item.Total</td>
-				<td></td>
+				<td>
+				<a
+					class="btn btn-primary"
+					asp-controller="Order"
+					asp-action="DeleteAllOrders"
+					asp-route-id="@item.OrderId">
+					CheckOut
+				</a>
 			</tr>
 		}
 	</tbody>

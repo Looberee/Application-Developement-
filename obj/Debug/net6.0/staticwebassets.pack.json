@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\Images\\42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
     },
     {
+      "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\55042a67-fdf1-438f-9da9-19770c77c995_af684410-da62-4096-914d-520242aa0b51_Book14.jpg",
+      "PackagePath": "staticwebassets\\Images\\55042a67-fdf1-438f-9da9-19770c77c995_af684410-da62-4096-914d-520242aa0b51_Book14.jpg"
+    },
+    {
       "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\5f04ce54-597f-4db3-823e-15f9a6a78893_896448bb-a8c1-4899-879a-a200d0b2becb_Book4.webp",
       "PackagePath": "staticwebassets\\Images\\5f04ce54-597f-4db3-823e-15f9a6a78893_896448bb-a8c1-4899-879a-a200d0b2becb_Book4.webp"
     },
@@ -225,6 +229,10 @@
       "PackagePath": "staticwebassets\\Images\\Image01.webp"
     },
     {
+      "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\Screenshot 2023-04-20 102121.png",
+      "PackagePath": "staticwebassets\\Images\\Screenshot 2023-04-20 102121.png"
+    },
+    {
       "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\a8479eb3-f6f8-49c9-adb2-d27efcb9cb12_23bf92d4-a3e8-466a-be30-493041bc2106_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
       "PackagePath": "staticwebassets\\Images\\a8479eb3-f6f8-49c9-adb2-d27efcb9cb12_23bf92d4-a3e8-466a-be30-493041bc2106_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
     },
@@ -247,6 +255,10 @@
     {
       "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\book5.png",
       "PackagePath": "staticwebassets\\Images\\book5.png"
+    },
+    {
+      "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\c0dd75cc-cdd8-4cf7-934f-079a70128611_biatruyen.webp",
+      "PackagePath": "staticwebassets\\Images\\c0dd75cc-cdd8-4cf7-934f-079a70128611_biatruyen.webp"
     },
     {
       "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\c9d6b20c-5269-460a-9643-68a6e5df9354_Book11.JPG",
@@ -407,6 +419,10 @@
     {
       "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\image02.png",
       "PackagePath": "staticwebassets\\Images\\image02.png"
+    },
+    {
+      "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\istockphoto-899442422-612x612.jpg",
+      "PackagePath": "staticwebassets\\Images\\istockphoto-899442422-612x612.jpg"
     },
     {
       "Id": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\logo.png",

@@ -3,9 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication123.ModelsCRUD.User;
 
-public class ResetPasswordViewModel : IEnumerable
+public class ResetPasswordViewModel
 {
-    [Required] [EmailAddress] public string Email { get; set; }
+    [Required] 
+    [EmailAddress] public string Email { get; set; }
 
     [Required]
     [DataType(DataType.Password)]
@@ -16,9 +17,6 @@ public class ResetPasswordViewModel : IEnumerable
     [Compare("Password", ErrorMessage = "Password and confirm password must match")]
     public string ConfirmPassword { get; set; }
 
-    public string Token { get; set; }
-    public IEnumerator GetEnumerator()
-    {
-        throw new NotImplementedException();
-    }
+    // public string Token { get; set; }
+    
 }

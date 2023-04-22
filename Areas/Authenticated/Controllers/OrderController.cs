@@ -99,5 +99,27 @@ namespace WebApplication123.Controllers
 			return RedirectToAction("BookProduct", "Book");
 		}
 
+        public async Task<IActionResult> DeleteAllOrders()
+        {
+	        var order_customer_detail = await context.OrderDetails.Include(_ => _.Book).Include(_ => _.Order).ThenInclude(_ => _.User).ToListAsync();
+
+	        if (order_customer_detail == null)
+	        {
+		        return NotFound();
+	        }
+
+	        foreach (var orderDetail in order_customer_detail)
+	        {
+		        context.OrderDetails.Remove(orderDetail);
+	        }
+
+	        await context.SaveChangesAsync();
+    
+	        return RedirectToAction(nameof(OrderIndex));
+        }
+
+        
+        
+
     }
 }

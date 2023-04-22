@@ -9,6 +9,8 @@
         <th>Email</th>
         <th>Name</th>
         <th>Address</th>
+        <th>Actions</th>
+        
     </tr>
     </thead>
     <tbody>
@@ -18,9 +20,10 @@
             <td>@customer.Email</td>
             <td>@customer.FullName</td>
             <td>@customer.Address</td>
-            <td>@customer.Role</td>
-            <td>
-            </td>
+            <td><a asp-area="Authenticated" asp-controller="User" asp-action="ResetPassword" class="btn btn-primary">Reset Password</a>
+                <a asp-area="Authenticated" asp-controller="User" asp-action="Delete" class="btn btn-danger">Delete</a></td>
+            
+            
         </tr>
     }
     </tbody>
