@@ -97,5 +97,38 @@ namespace WebApplication123.Controllers
 
             return RedirectToAction("CategoryIndex");
         }
+        [HttpPost("{id}/approve")]
+        public async Task<IActionResult> Approve(int id)
+        {
+            var category = await context.Categories.FindAsync(id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            category.IsApproved = true;
+            context.SaveChanges();
+
+            // code to notify store owner of category approval here
+
+            return RedirectToAction(nameof(CategoryIndex));
+        }
+
+        [HttpPost("{id}/reject")]
+        public async Task<IActionResult> Reject(int id)
+        {
+            var category = await context.Categories.FindAsync(id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            context.Categories.Remove(category);
+            context.SaveChanges();
+
+            // code to notify store owner of category rejection here
+
+            return RedirectToAction(nameof(CategoryIndex));
+        }
     }
 }

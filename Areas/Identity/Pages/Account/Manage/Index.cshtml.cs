@@ -7,14 +7,19 @@ using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using WebApplication123.Data;
+using WebApplication123.ModelsCRUD.User;
+using WebApplication123.Utils;
 
 namespace WebApplication123.Areas.Identity.Pages.Account.Manage
 {
+    
     public class IndexModel : PageModel
     {
         private readonly UserManager<IdentityUser> _userManager;
@@ -137,5 +142,8 @@ namespace WebApplication123.Areas.Identity.Pages.Account.Manage
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();
         }
+
+
+        
     }
 }

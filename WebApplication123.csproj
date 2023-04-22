@@ -42,8 +42,4 @@
 		<AdditionalFiles Include="Areas\UnAuthenticated\Views\Home\Privacy.cshtml" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="ModelsCRUD\Order\" />
-	</ItemGroup>
-
 </Project>
