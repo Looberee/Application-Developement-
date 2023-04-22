@@ -64,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xDYXJ0XENhcnRJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/1670/Application-Developement-/Areas/Authenticated/Views/Category/CategoryApproved.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xDYXRlZ29yeVxDYXRlZ29yeUFwcHJvdmVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/1670/Application-Developement-/Areas/Authenticated/Views/Category/CategoryIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xDYXRlZ29yeVxDYXRlZ29yeUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +94,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/1670/Application-Developement-/Areas/Authenticated/Views/PublishCompany/ViewCompany.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xQdWJsaXNoQ29tcGFueVxWaWV3Q29tcGFueS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1670/Application-Developement-/Areas/Authenticated/Views/User/GetCustomers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xVc2VyXEdldEN1c3RvbWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1670/Application-Developement-/Areas/Authenticated/Views/User/GetStoreOwners.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xVc2VyXEdldFN0b3JlT3duZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1670/Application-Developement-/Areas/Authenticated/Views/User/ProfileUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xVc2VyXFByb2ZpbGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1670/Application-Developement-/Areas/Authenticated/Views/User/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXV0aGVudGljYXRlZFxWaWV3c1xVc2VyXFJlc2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/1670/Application-Developement-/Areas/Authenticated/Views/_ViewImports.cshtml]
@@ -266,6 +286,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/1670/Application-Developement-/Areas/UnAuthenticated/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVW5BdXRoZW50aWNhdGVkXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/1670/Application-Developement-/ModelsCRUD/Order/OrderIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = TW9kZWxzQ1JVRFxPcmRlclxPcmRlckluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/1670/Application-Developement-/Views/Shared/Error.cshtml]

@@ -128,14 +128,14 @@ namespace WebApplication123.Areas.Authenticated.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> UserIndex()
+        public async Task<IActionResult> ProfileUser()
         {
             // taking current login user id
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 
             // exception itself admin
-            var userList = _db.ApplicationUsers.Where(u => u.Id != claims.Value);
+            var userList = _db.ApplicationUsers.Where(u => u.Id == claims.Value);
 
             foreach (var user in userList)
             {

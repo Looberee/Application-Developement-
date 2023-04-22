@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication123.ModelsCRUD.User;
 
-public class ResetPasswordViewModel
+public class ResetPasswordViewModel : IEnumerable
 {
     [Required] [EmailAddress] public string Email { get; set; }
 
@@ -16,4 +17,8 @@ public class ResetPasswordViewModel
     public string ConfirmPassword { get; set; }
 
     public string Token { get; set; }
+    public IEnumerator GetEnumerator()
+    {
+        throw new NotImplementedException();
+    }
 }

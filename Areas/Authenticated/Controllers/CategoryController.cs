@@ -10,7 +10,7 @@ using WebApplication123.Utils;
 namespace WebApplication123.Controllers
 {
     [Area(SD.AuthenticatedArea)]
-    [Authorize(Roles = SD.StoreOwnerRole)]
+    [Authorize(Roles = SD.StoreOwnerRole + "," + SD.AdminRole)]
     public class CategoryController : Controller
     {
         private readonly ApplicationDbContext context;
@@ -21,6 +21,11 @@ namespace WebApplication123.Controllers
         }
         [HttpGet]
         public async Task<IActionResult> CategoryIndex()
+        {
+            var category = await context.Categories.ToListAsync();
+            return View(category);
+        }
+        public async Task<IActionResult> CategoryApproved()
         {
             var category = await context.Categories.ToListAsync();
             return View(category);
