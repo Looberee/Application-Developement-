@@ -4,11 +4,14 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using WebApplication123.Data;
 
 namespace WebApplication123.Areas.Identity.Pages.Account.Manage
 {
@@ -16,13 +19,15 @@ namespace WebApplication123.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly ApplicationDbContext _db;
 
         public IndexModel(
             UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager)
+            SignInManager<IdentityUser> signInManager, ApplicationDbContext db)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _db = db;
         }
 
         /// <summary>
@@ -58,18 +63,28 @@ namespace WebApplication123.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+            
+            [Display(Name = "Address")]
+            public string Address { get; set; }
         }
 
         private async Task LoadAsync(IdentityUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+            
+            // taking current login user id
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            var currentUserId = claims.Value;
+            var userFromDb = await _db.ApplicationUsers.FirstOrDefaultAsync(x => x.Id == currentUserId);
 
             Username = userName;
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                Address = userFromDb.Address
             };
         }
 
@@ -108,6 +123,14 @@ namespace WebApplication123.Areas.Identity.Pages.Account.Manage
                     StatusMessage = "Unexpected error when trying to set phone number.";
                     return RedirectToPage();
                 }
+            }
+            
+            // Update the address field
+            var userFromDb = await _db.ApplicationUsers.FirstOrDefaultAsync(x => x.Id == user.Id);
+            if (userFromDb != null)
+            {
+                userFromDb.Address = Input.Address;
+                await _db.SaveChangesAsync();
             }
 
             await _signInManager.RefreshSignInAsync(user);
