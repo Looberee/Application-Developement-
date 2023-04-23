@@ -1,0 +1,43 @@
+﻿@using Microsoft.VisualBasic.CompilerServices
+@using System.Reflection.Metadata
+@using WebApplication123.Utils
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using WebApplication123.Utils
+@model List<WebApplication123.Models.Category>;
+@{
+}
+
+<h1>Categories</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Is Approved</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.CategoryId</td>
+                <td>@category.Name</td>
+                <td>@category.Description</td>
+                <td>@category.IsApproved</td>
+                <td>
+                    @if (!category.IsApproved && User.IsInRole(SD.AdminRole))
+                    {
+                        <form method="post" action="@Url.Action("Approve", new { id = category.CategoryId })">
+                            <button type="submit" class="btn btn-primary">Approve</button>
+                        </form>
+                        <form method="post" action="@Url.Action("Reject", new { id = category.CategoryId })">
+                            <button type="submit" class="btn btn-danger">Reject</button>
+                        </form>
+                    }
+                </td>
+                <td><a href="ViewCategory/@category.CategoryId">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

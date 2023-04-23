@@ -36,11 +36,11 @@
         <img id="FrontImagePrv" src="" alt="Logo Image" width="150" height="150" style="border:1px; margin-top:20px; margin-left:120px"/>
     </div>
     <div class="mb-3">
-        <label for="BookCategoryId" class="form-label">CategoryId :</label>
+        <label for="BookCategoryId" class="form-label">Category Name :</label>
         @Html.DropDownListFor(model => model.CategoryId, (SelectList)ViewBag.Category_id, new { @class = "form-control" })
     </div>
     <div class="mb-3">
-        <label for="BookPublishId" class="form-label">PublishId:</label>
+        <label for="BookPublishId" class="form-label">Publish Company Name:</label>
         @Html.DropDownListFor(model => model.PublishCompanyId, (SelectList)ViewBag.Company_id, new { @class = "form-control" })
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>

@@ -47,7 +47,7 @@
 												</a>
 											</div>
 
-											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product1" value="@item.Quantity">
+											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product1" id="maxmin" value="@item.Quantity" min="1" max="@item.Book.Quantity">
 
 											<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
 												<a asp-area="Authenticated" asp-controller="Cart" asp-action="Plus" asp-route-cartId="@item.CartId" class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m text-black">

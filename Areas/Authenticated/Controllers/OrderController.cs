@@ -88,16 +88,41 @@ namespace WebApplication123.Controllers
 			foreach (var order_book in order_list)
 			{
 				var stored_book = await context.Books.FirstOrDefaultAsync(x => x.BookId == order_book.BookId);
-				int book_quantity_inStored = int.Parse(stored_book.Quantity);
+				int book_quantity_inStored = stored_book.Quantity;
 				book_quantity_inStored -= order_book.Quantity;
-				stored_book.Quantity = book_quantity_inStored.ToString();
+				stored_book.Quantity = book_quantity_inStored;
+				if (stored_book.Quantity == 0)
+				{
+					context.Books.Remove(stored_book);
+				}
 
 				await context.SaveChangesAsync();
 			}
 
 			await context.SaveChangesAsync();
+			Thread.Sleep(2000);
 			return RedirectToAction("BookProduct", "Book");
 		}
 
-    }
+		public async Task<IActionResult> DeleteAllOrders()
+		{
+			var order_customer_detail = await context.OrderDetails.Include(_ => _.Book).Include(_ => _.Order).ThenInclude(_ => _.User).ToListAsync();
+
+			if (order_customer_detail == null)
+			{
+				return NotFound();
+			}
+
+			foreach (var orderDetail in order_customer_detail)
+			{
+				context.OrderDetails.Remove(orderDetail);
+			}
+
+			await context.SaveChangesAsync();
+			
+			return RedirectToAction(nameof(OrderIndex));
+		}
+
+
+	}
 }

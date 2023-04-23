@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>@ViewData["Title"] - FPT SHOP</title>
+	<title>@ViewData["Title"] - FPT Book Store</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication123.styles.css" asp-append-version="true" />
@@ -30,7 +30,7 @@
 			<div class="top-bar">
 				<div class="content-topbar flex-sb-m h-full container">
 					<div class="left-top-bar">
-						Free shipping for standard order over $100
+						WELCOM CUSTOMER TO FPT BOOK STORE
 					</div>
 
 					<div class="right-top-bar flex-w h-full">
@@ -38,19 +38,10 @@
 							Help & FAQs
 						</a>
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
+						<a asp-area="Authenticated" asp-controller="User" asp-action="ProfileUser" class="flex-c-m trans-04 p-lr-25">
 							My Account
 						</a>
-
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							EN
-						</a>
-
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							USD
-						</a>	
-							
-						
+													
 					</div>
 				</div>
 			</div>
@@ -67,7 +58,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="#">Home</a>
+								<a asp-area="UnAuthenticated" asp-controller="Home" asp-action="Index">FPT BOOK STORE</a>
 								
 							</li>
 
@@ -76,21 +67,10 @@
 								
 							</li>
 
-							<li class="label1" data-label1="hot">
-								<a href="#">Features</a>
+							<li>
+								<a asp-area="UnAuthenticated" asp-controller="Home" asp-action="Privacy">About</a>
 							</li>
 
-							<li>
-								<a href="#">Blog</a>
-							</li>
-
-							<li>
-								<a href="#">About</a>
-							</li>
-
-							<li>
-								<a href="#">Contact</a>
-							</li>
 						</ul>
 					</div>
 
@@ -99,14 +79,13 @@
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
 							<i class="zmdi zmdi-search"></i>
 						</div>
-					
-						<a asp-area="Authenticated" asp-controller="Cart" asp-action="CartIndex" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
-							<i class="zmdi zmdi-shopping-cart"></i>
+						
+						<a asp-area="Authenticated" asp-controller="Cart" asp-action="CartIndex" class="icon-header-item cl2">
 						</a>
 
-						<a href="#" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
+						@*<a href="#" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
 							<i class="zmdi zmdi-favorite-outline"></i>
-						</a>
+						</a>*@
 					</div>
 					<div class="navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom pl-5">
 						<div class="how-shadow1 rounded-pill">

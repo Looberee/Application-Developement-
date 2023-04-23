@@ -5,128 +5,12 @@
       "PackagePath": "staticwebassets\\WebApplication123.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\065c8ac6-914f-43ba-9421-9dab04c14045_3e5133a7-9305-405a-a365-f30691351266_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg",
-      "PackagePath": "staticwebassets\\Images\\065c8ac6-914f-43ba-9421-9dab04c14045_3e5133a7-9305-405a-a365-f30691351266_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\5c6b45c5-d343-43e8-9621-426d8cfb1fb1_Book2.jpg",
+      "PackagePath": "staticwebassets\\Images\\5c6b45c5-d343-43e8-9621-426d8cfb1fb1_Book2.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\152079e2-d0f5-49cf-a1ea-becf808cb952_0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\152079e2-d0f5-49cf-a1ea-becf808cb952_0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\163a6f69-ab16-45c8-82ef-6227dfbd1873_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\163a6f69-ab16-45c8-82ef-6227dfbd1873_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\1907b99e-4a9a-43ad-9147-4826942358fd_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\1907b99e-4a9a-43ad-9147-4826942358fd_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\1be12d53-50ea-4795-999f-2f0c894773be_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\1be12d53-50ea-4795-999f-2f0c894773be_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\212de750-7360-4936-8d1b-4ca3cc506a05_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\212de750-7360-4936-8d1b-4ca3cc506a05_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\23bf92d4-a3e8-466a-be30-493041bc2106_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\23bf92d4-a3e8-466a-be30-493041bc2106_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\2777d609-0a03-4271-921a-cd5f8f674fc5_0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\2777d609-0a03-4271-921a-cd5f8f674fc5_0a88d401-41c2-4c9a-8d79-4e008f728396_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\37541bfe-9a8d-4dab-9d7e-e5ea4cc9bd46_Book4.webp",
-      "PackagePath": "staticwebassets\\Images\\37541bfe-9a8d-4dab-9d7e-e5ea4cc9bd46_Book4.webp"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\3e5133a7-9305-405a-a365-f30691351266_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg",
-      "PackagePath": "staticwebassets\\Images\\3e5133a7-9305-405a-a365-f30691351266_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\41e3485f-30fa-4224-9240-995b2282a81a_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\41e3485f-30fa-4224-9240-995b2282a81a_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\41f45699-1c4f-43a7-b355-d04b2c26b58f_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\41f45699-1c4f-43a7-b355-d04b2c26b58f_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\42bed59a-260c-40c1-9c56-f9eefe83ad18_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\42bed59a-260c-40c1-9c56-f9eefe83ad18_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\5f04ce54-597f-4db3-823e-15f9a6a78893_896448bb-a8c1-4899-879a-a200d0b2becb_Book4.webp",
-      "PackagePath": "staticwebassets\\Images\\5f04ce54-597f-4db3-823e-15f9a6a78893_896448bb-a8c1-4899-879a-a200d0b2becb_Book4.webp"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\6084abfe-0677-491a-b3bc-a87b98aa4a87_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\6084abfe-0677-491a-b3bc-a87b98aa4a87_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\65bfeb37-c83c-4d50-a6fa-1d746e03b548_ssss.png",
-      "PackagePath": "staticwebassets\\Images\\65bfeb37-c83c-4d50-a6fa-1d746e03b548_ssss.png"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\66a6810f-db48-4214-aef7-3368cab1bab7_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\66a6810f-db48-4214-aef7-3368cab1bab7_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\68a4f583-db65-4be3-b719-87596425013b_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\68a4f583-db65-4be3-b719-87596425013b_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\7464a3be-556d-4893-8ab1-42f8f6ab419a_9025bab8-b1c7-46b3-a5bd-cced598fa506_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\7464a3be-556d-4893-8ab1-42f8f6ab419a_9025bab8-b1c7-46b3-a5bd-cced598fa506_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg",
-      "PackagePath": "staticwebassets\\Images\\76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\7b3a468a-ee33-438f-8d22-4f54fb21f483_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\7b3a468a-ee33-438f-8d22-4f54fb21f483_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\87ad1096-34a2-4578-9fc2-6a775f499a34_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\87ad1096-34a2-4578-9fc2-6a775f499a34_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\896448bb-a8c1-4899-879a-a200d0b2becb_Book4.webp",
-      "PackagePath": "staticwebassets\\Images\\896448bb-a8c1-4899-879a-a200d0b2becb_Book4.webp"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\9025bab8-b1c7-46b3-a5bd-cced598fa506_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\9025bab8-b1c7-46b3-a5bd-cced598fa506_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\9989ab5a-8fd1-42f8-988f-c4ea243ba326_Book14.jpg",
-      "PackagePath": "staticwebassets\\Images\\9989ab5a-8fd1-42f8-988f-c4ea243ba326_Book14.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\9d9e6b27-1a11-4f64-b47d-62c49d0aa594_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\9d9e6b27-1a11-4f64-b47d-62c49d0aa594_Book2.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\74c2c0e9-5b4f-4c3d-abf1-2629030582d6_b89ec6e3-6df1-4149-8dc8-cdbb0bb8abf4_Book23.jpg",
+      "PackagePath": "staticwebassets\\Images\\74c2c0e9-5b4f-4c3d-abf1-2629030582d6_b89ec6e3-6df1-4149-8dc8-cdbb0bb8abf4_Book23.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\Book1.jpg",
@@ -225,104 +109,124 @@
       "PackagePath": "staticwebassets\\Images\\Image01.webp"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\a8479eb3-f6f8-49c9-adb2-d27efcb9cb12_23bf92d4-a3e8-466a-be30-493041bc2106_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\a8479eb3-f6f8-49c9-adb2-d27efcb9cb12_23bf92d4-a3e8-466a-be30-493041bc2106_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\about-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\about-01.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\aaf88025-e959-409f-8a77-d87acdb062e9_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\aaf88025-e959-409f-8a77-d87acdb062e9_10c8be5b-cd4c-4874-abee-21216f8725e2_42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\about-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\about-02.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\af684410-da62-4096-914d-520242aa0b51_Book14.jpg",
-      "PackagePath": "staticwebassets\\Images\\af684410-da62-4096-914d-520242aa0b51_Book14.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\avatar-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\avatar-01.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\b3049279-019d-4162-8c23-a7e4555b870f_3e5133a7-9305-405a-a365-f30691351266_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg",
-      "PackagePath": "staticwebassets\\Images\\b3049279-019d-4162-8c23-a7e4555b870f_3e5133a7-9305-405a-a365-f30691351266_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\b89ec6e3-6df1-4149-8dc8-cdbb0bb8abf4_Book23.jpg",
+      "PackagePath": "staticwebassets\\Images\\b89ec6e3-6df1-4149-8dc8-cdbb0bb8abf4_Book23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-04.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-05.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-06.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-07.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-08.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\banner-09.jpg",
+      "PackagePath": "staticwebassets\\Images\\banner-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\bg-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\bg-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\bg-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\bg-02.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\biatruyen.webp",
       "PackagePath": "staticwebassets\\Images\\biatruyen.webp"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\blog-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\blog-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\blog-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\blog-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\blog-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\blog-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\blog-04.jpg",
+      "PackagePath": "staticwebassets\\Images\\blog-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\blog-05.jpg",
+      "PackagePath": "staticwebassets\\Images\\blog-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\blog-06.jpg",
+      "PackagePath": "staticwebassets\\Images\\blog-06.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\book5.png",
       "PackagePath": "staticwebassets\\Images\\book5.png"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\c9d6b20c-5269-460a-9643-68a6e5df9354_Book11.JPG",
-      "PackagePath": "staticwebassets\\Images\\c9d6b20c-5269-460a-9643-68a6e5df9354_Book11.JPG"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\ce99bd55-84bf-432a-8fb0-19b1d6869256_9989ab5a-8fd1-42f8-988f-c4ea243ba326_Book14.jpg",
-      "PackagePath": "staticwebassets\\Images\\ce99bd55-84bf-432a-8fb0-19b1d6869256_9989ab5a-8fd1-42f8-988f-c4ea243ba326_Book14.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\d01dec51-de07-4f87-a633-192cb0407e88_Book15.jpg",
-      "PackagePath": "staticwebassets\\Images\\d01dec51-de07-4f87-a633-192cb0407e88_Book15.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\d24aae59-ef8d-43cd-9f62-c1f1ff58ac57_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\d24aae59-ef8d-43cd-9f62-c1f1ff58ac57_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\d29f95f7-8ab6-4779-ab39-5d006cc760b7_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\d29f95f7-8ab6-4779-ab39-5d006cc760b7_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\d2ceb611-760f-43e4-a245-90803f63facf_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg",
-      "PackagePath": "staticwebassets\\Images\\d2ceb611-760f-43e4-a245-90803f63facf_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\d744fc5a-f2aa-4cb9-ac73-62d5a1145d1d_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg",
-      "PackagePath": "staticwebassets\\Images\\d744fc5a-f2aa-4cb9-ac73-62d5a1145d1d_9d80ab2c-646b-4785-b331-fd6525a3879a_Book2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\da50b530-4f5d-468d-958b-4225eaeed57d_9989ab5a-8fd1-42f8-988f-c4ea243ba326_Book14.jpg",
-      "PackagePath": "staticwebassets\\Images\\da50b530-4f5d-468d-958b-4225eaeed57d_9989ab5a-8fd1-42f8-988f-c4ea243ba326_Book14.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\de619514-edac-42e7-b936-b4aed899af9e_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\de619514-edac-42e7-b936-b4aed899af9e_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\de8d7e32-a977-4338-8929-2c1c373d19f0_3e5133a7-9305-405a-a365-f30691351266_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg",
-      "PackagePath": "staticwebassets\\Images\\de8d7e32-a977-4338-8929-2c1c373d19f0_3e5133a7-9305-405a-a365-f30691351266_76d8c132-080e-43ac-8868-b2bead7158de_Book8.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\download.webp",
       "PackagePath": "staticwebassets\\Images\\download.webp"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\e6de3633-d0c8-4130-835d-02e32b083854_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\e6de3633-d0c8-4130-835d-02e32b083854_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-01.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\e7624180-7759-4587-a886-65eef9529a02_Book15.jpg",
-      "PackagePath": "staticwebassets\\Images\\e7624180-7759-4587-a886-65eef9529a02_Book15.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-02.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\e9241090-e839-445f-91bb-71777e50d94d_Book8.jpg",
-      "PackagePath": "staticwebassets\\Images\\e9241090-e839-445f-91bb-71777e50d94d_Book8.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-03.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\ea0462b7-908d-4485-aa84-6145b0c1439b_firebase1.png",
-      "PackagePath": "staticwebassets\\Images\\ea0462b7-908d-4485-aa84-6145b0c1439b_firebase1.png"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-04.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-04.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\f65c5da8-cb10-4485-945b-9e82311aeb62_sample3.png",
-      "PackagePath": "staticwebassets\\Images\\f65c5da8-cb10-4485-945b-9e82311aeb62_sample3.png"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-05.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-05.jpg"
     },
     {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\fa35d00e-f445-48dc-adba-86b5ba3f93b2_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\fa35d00e-f445-48dc-adba-86b5ba3f93b2_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\fbeebdaf-e3e7-461b-b07b-3ea0ebaaad2f_Book8.jpg",
-      "PackagePath": "staticwebassets\\Images\\fbeebdaf-e3e7-461b-b07b-3ea0ebaaad2f_Book8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\fd7ab78f-fc0f-4c87-b200-cfd845147a5e_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg",
-      "PackagePath": "staticwebassets\\Images\\fd7ab78f-fc0f-4c87-b200-cfd845147a5e_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-06.jpg",
+      "PackagePath": "staticwebassets\\Images\\gallery-06.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\gallery-07.jpg",
@@ -409,12 +313,164 @@
       "PackagePath": "staticwebassets\\Images\\image02.png"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\item-cart-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\item-cart-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\item-cart-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\item-cart-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\item-cart-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\item-cart-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\item-cart-04.jpg",
+      "PackagePath": "staticwebassets\\Images\\item-cart-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\item-cart-05.jpg",
+      "PackagePath": "staticwebassets\\Images\\item-cart-05.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\logo.png",
       "PackagePath": "staticwebassets\\Images\\logo.png"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-04.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-05.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-06.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-07.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-08.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-09.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-10.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-10.jpg"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-11.jpg",
       "PackagePath": "staticwebassets\\Images\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-12.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-13.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-14.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-15.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-16.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-detail-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-detail-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-detail-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-detail-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-detail-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-detail-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-min-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-min-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-min-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-min-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\product-min-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\product-min-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\slide-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\slide-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\slide-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\slide-04.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\slide-05.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\slide-06.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\slide-07.jpg",
+      "PackagePath": "staticwebassets\\Images\\slide-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\thumb-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\thumb-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\thumb-02.jpg",
+      "PackagePath": "staticwebassets\\Images\\thumb-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\thumb-03.jpg",
+      "PackagePath": "staticwebassets\\Images\\thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\wallhaven-g8yjol.jpg",
+      "PackagePath": "staticwebassets\\Images\\wallhaven-g8yjol.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\Images\\wallhaven-p8xr3e.jpg",
+      "PackagePath": "staticwebassets\\Images\\wallhaven-p8xr3e.jpg"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\WebApplication123\\WebApplication123\\wwwroot\\css\\main.css",
