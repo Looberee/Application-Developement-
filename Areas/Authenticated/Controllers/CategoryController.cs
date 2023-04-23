@@ -22,7 +22,7 @@ namespace WebApplication123.Controllers
         [HttpGet]
         public async Task<IActionResult> CategoryIndex()
         {
-            var category = await context.Categories.ToListAsync();
+            var category = await context.Categories.Where(x => x.IsApproved).ToListAsync();
             return View(category);
         }
         public async Task<IActionResult> CategoryApproved()
