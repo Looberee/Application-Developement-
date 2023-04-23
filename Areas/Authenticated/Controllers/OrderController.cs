@@ -120,9 +120,5 @@ namespace WebApplication123.Controllers
     
 	        return RedirectToAction(nameof(OrderIndex));
         }
-
-        
-        
-
     }
 }

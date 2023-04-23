@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Syvak1pI3YjZ61F/MN8gVHyDG/zoCWzx0UGWIbFnbi0=",
+  "Hash": "saKfkvMdEDimr2+Yvq2sQH7YZHpqCXoPXZD+v6o+Di8=",
   "Source": "WebApplication123",
   "BasePath": "_content/WebApplication123",
   "Mode": "Default",
@@ -4129,6 +4129,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\fd7ab78f-fc0f-4c87-b200-cfd845147a5e_075c80eb-2639-48c6-b6fa-040321304c71_Book7.jpg"
+    },
+    {
+      "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\fe0d9973-8ff8-42c5-8dd8-41f7a2bfe5a1_Book4.webp",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\1670\\Application-Developement-\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/fe0d9973-8ff8-42c5-8dd8-41f7a2bfe5a1_Book4.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\fe0d9973-8ff8-42c5-8dd8-41f7a2bfe5a1_Book4.webp"
     },
     {
       "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\gallery-07.jpg",
