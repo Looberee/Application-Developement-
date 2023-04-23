@@ -1840,6 +1840,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\4ce6cf37-3b2f-4733-8aa0-9d08ab5b179b_biatruyen.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebApplication123</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebApplication123</BasePath>
+      <RelativePath>Images/4ce6cf37-3b2f-4733-8aa0-9d08ab5b179b_biatruyen.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\4ce6cf37-3b2f-4733-8aa0-9d08ab5b179b_biatruyen.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\55042a67-fdf1-438f-9da9-19770c77c995_af684410-da62-4096-914d-520242aa0b51_Book14.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>WebApplication123</SourceId>

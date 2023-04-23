@@ -263,9 +263,8 @@ namespace WebApplication123.Migrations
                     b.Property<int>("PublishCompanyId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Quantity")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ilFZ+Z90KTBdMVKrGjRBFflk+1UlEPhacCS33woqc1o=",
+  "Hash": "Syvak1pI3YjZ61F/MN8gVHyDG/zoCWzx0UGWIbFnbi0=",
   "Source": "WebApplication123",
   "BasePath": "_content/WebApplication123",
   "Mode": "Default",
@@ -3024,6 +3024,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\42e1b2e0-8377-4068-b03f-22a4e720e08e_Book11.JPG"
+    },
+    {
+      "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\4ce6cf37-3b2f-4733-8aa0-9d08ab5b179b_biatruyen.webp",
+      "SourceId": "WebApplication123",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\1670\\Application-Developement-\\wwwroot\\",
+      "BasePath": "_content/WebApplication123",
+      "RelativePath": "Images/4ce6cf37-3b2f-4733-8aa0-9d08ab5b179b_biatruyen.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\4ce6cf37-3b2f-4733-8aa0-9d08ab5b179b_biatruyen.webp"
     },
     {
       "Identity": "D:\\1670\\Application-Developement-\\wwwroot\\Images\\55042a67-fdf1-438f-9da9-19770c77c995_af684410-da62-4096-914d-520242aa0b51_Book14.jpg",

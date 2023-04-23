@@ -35,19 +35,27 @@ namespace WebApplication123.Areas.Authenticated.Controllers
 
 		public async Task<IActionResult> Plus(int cartId)
 		{
+			
 
 			var cart = await context.Carts.Include(p => p.Book).FirstOrDefaultAsync(c => c.CartId == cartId);
-
+			var book =  context.Books.FirstOrDefault(x => x.BookId == cart.BookId);
+			
 			if (cart == null)
 			{
 				return NotFound();
 			}
 
-			cart.Quantity += 1;
+			if (cart.Quantity < book.Quantity)
+			{
+				cart.Quantity += 1;
+			}
+			
             cart.Total = cart.Quantity * cart.Book.Price;
             await context.SaveChangesAsync();
 			return RedirectToAction(nameof(CartIndex));
+			
 		}
+		
 
 		public async Task<IActionResult> Minus(int cartId)
 		{

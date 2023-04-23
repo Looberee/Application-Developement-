@@ -12,7 +12,7 @@ using WebApplication123.Data;
 namespace WebApplication123.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230422053035_CreateDb")]
+    [Migration("20230423114030_CreateDb")]
     partial class CreateDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -265,9 +265,8 @@ namespace WebApplication123.Migrations
                     b.Property<int>("PublishCompanyId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Quantity")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");

@@ -87,10 +87,14 @@ namespace WebApplication123.Controllers
 			foreach (var order_book in order_list)
 			{
 				var stored_book = await context.Books.FirstOrDefaultAsync(x => x.BookId == order_book.BookId);
-				int book_quantity_inStored = int.Parse(stored_book.Quantity);
+				int book_quantity_inStored = stored_book.Quantity;
 				book_quantity_inStored -= order_book.Quantity;
-				stored_book.Quantity = book_quantity_inStored.ToString();
-
+				stored_book.Quantity = book_quantity_inStored;
+				if (stored_book.Quantity == 0)
+				{
+					context.Books.Remove(stored_book);
+				}
+			
 				await context.SaveChangesAsync();
 			}
 

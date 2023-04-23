@@ -73,7 +73,7 @@ namespace WebApplication123.Controllers
                     var NewQuantity = bookitem.Quantity.ToString();
                     var StoredQuantity = book.Quantity.ToString();
                     int ToStoredQuantity = int.Parse(StoredQuantity) + int.Parse(NewQuantity);
-                    bookitem.Quantity = ToStoredQuantity.ToString();
+                    bookitem.Quantity = ToStoredQuantity;
                     bookitem.UpdateDate = book.UpdateDate;
                     await context.SaveChangesAsync();
                     return RedirectToAction("BookIndex");
